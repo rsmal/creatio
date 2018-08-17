@@ -1,3 +1,527 @@
-.intro {
-    background-image: url("176636-OW9G9J-836.png");
+* {
+    margin: 0;
+    padding: 0;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;;
+}
+
+.intro {
+    background-image: url("../images/hero.png");
+    height: 100vh;
+    &__info { 
+        color: #fff;
+        border-bottom: solid 1px #888;
+    }
+    &__list {
+        display: flex;
+        margin-left: 15%;
+        cursor: pointer;
+    }
+    &__item{
+        padding: 20px;
+    }
+    &__social {
+       margin-left: 35%;
+       padding: 10px;
+    }
+}
+.fas {
+    padding-right: 5px;
+    &:hover {
+        color: #5dc6e8;
+        transition: 0.3s;
+    }
+}
+
+.fab {
+    padding: 10px;
+    font-size: 20px;
+        &:hover {
+            color: #5dc6e8;
+            transition: 0.3s;
+    }
+}
+
+.nav {
+    color: white;
+    &__list{
+        display: flex;
+        margin-top: 2%;
+        margin-left: 64.4%;
+    }
+    &__item {
+        padding: 15px 10px;
+    }
+    &__link { 
+        &:hover {
+            color: #5dc6e8;
+            transition: 0.3s;     
+        }
+    }
+    &__logo {
+        position: absolute;
+        top: 10%;
+        left: 15.5%;
+    }
+}
+.hamicon{
+    display: none;
+}
+
+.slogan{
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 15%;
+    &__title {
+        font-size: 40px;
+        opacity: 0.7;
+    }
+    &__subtitle {
+        font-size: 40px;
+        opacity: 0.5;
+        margin-bottom: 40px;
+    }
+    &__link {
+        padding: 10px 20px;
+        border: 2px solid #2e93b4;
+        background-color: #2e93b4;
+        &:hover {
+            background-color: rgba(255,255,255,0);
+            transition: 0.3s;
+        }
+
+    }
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 100px;
+    margin: 100px;
+    &__title{
+        font-size: 30px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 50px;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 80px;
+            border-bottom: solid 3px #5dc6e8;
+            left: 0;
+            top: 45px;
+        }
+    }
+    &__span{
+        margin: 30px 0;
+        color: #777;
+    }
+    &__img{
+        margin-top: 30px;
+        margin-left: 50px;
+        height: 90%;
+    }
+}
+
+.skills {
+    background-image: url("../images/skills.png");
+    height: 672px;
+    color: white;
+    &__title{
+        font-size: 30px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 50px;
+        margin-left: 18.5%;
+        padding-top: 5%;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 95px;
+            border-bottom: solid 3px #5dc6e8;
+            left: 0;
+            top: 105%;
+        }
+    }
+    &__span {
+        margin-top: 5%;
+        margin-left: 18.5%;
+        color: #6D687E;
+        font-size: 20px;
+        max-width: 500px;
+    }
+}
+
+.services {
+    margin-top: 75px;
+    text-align: center;
+    &__title {
+        font-size: 30px;
+        text-transform: uppercase;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 95px;
+            border-bottom: solid 3px #5dc6e8;
+            left: 48%;
+            top: 50px;      
+        }
+    }
+    &__content {
+    margin-top:100px;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    margin-left: 20%;
+    grid-gap: 100px;
+    }
+    &__card {
+        margin: 0 auto;
+        padding: 50px;
+        background-color: #e6e6e6;
+        width: 250px;
+    }
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+    &__span{
+        max-width: 200px;
+        text-align: center;
+        margin: 0 auto;
+        color: #777;
+    }
+    &__img{
+        margin-top: 75px;
+        width: 100%;
+       
+    }
+}
+
+.icon {
+    color: #5dc6e8;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.portfollio {
+    text-align: center;
+    &__title{
+        margin-top: 100px;
+        font-size: 30px;
+        text-transform: uppercase;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 95px;
+            border-bottom: solid 3px #5dc6e8;
+            left: 48%;
+            top: 50px;      
+        }
+        
+    }
+    &__list {
+        margin-top: 75px;
+        display: flex;
+        justify-content: center;
+    }
+    &__item{
+        padding: 10px;   
+    }
+    &__link{
+        font-size: 20px;
+        &:hover {
+            color:red;
+            transition: 0.3s;
+        }
+    }
+    &__gallery{
+        max-width: 1024px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%; 
+    }
+    &__img{  
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+    }
+}
+
+.footer{
+    margin-top: 100px;
+    background-color: black;
+    height: 30vh;
+    color: white;
+    position: relative;
+    &__title{
+        
+        margin-left: 25%;
+        padding: 40px 0 20px;
+    }
+    &__span{
+        margin-left: 25%;
+        padding: 10px 0;
+    }
+    &__social{
+        position: absolute;
+        left:62%;
+        top:20%;
+    }
+}
+
+.ficon{
+    color: #5dc6e8;
+}
+
+.ficon2 {
+    font-size: 30px;
+    width: 30px;
+    margin: 10px;
+    padding: 20px;
+    color: black;
+    border-radius: 50%;
+    background-color: #777;
+    text-align: center;
+    &:hover {
+        background-color: #5dc6e8;
+        color:white;
+        transition: 0.3s;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .intro {
+        background-position: center;
+
+        &__info{
+        display:none;
+        }
+    }
+    
+    .nav{
+        &__list{
+            display: none;
+            margin: 0;   
+        }
+        &__link{
+            
+        }
+        &__logo{
+            position: relative;
+            padding:10px;
+            left: 0%;
+            top: 0%;
+            
+        }
+    }
+    .hamicon{
+        display: block;
+        font-size: 35px;
+        position: absolute;
+        top: 10px;
+        left: 80%;
+    }
+
+    .active {
+        display: block;
+        background-color: black;
+    }
+
+    .slogan {
+        margin: 0;
+        &__title{
+            padding-top: 40%;
+        }
+    }
+
+    .about{
+        display: block;
+        &__title{
+            text-align: center;
+            width: 100%;
+            &::after{
+                top: 80px;
+                left: 35px;
+            }
+        }
+        &__img{
+            display: none;
+        }
+    } 
+
+    .skills {
+        background-image: url("../images/rwd__skills.png");
+        width: 100%;
+        &__title{
+            padding-top: 90px;
+            &::after{
+                top: 140px;
+                left: 80px;
+            }
+        }
+        &__span{
+            display: none;
+        }
+    }
+
+    .services{
+        &__title{
+            margin-bottom: 50px;
+            &::after{
+                top: 45px;
+                left: 140px;
+            }
+        }
+        &__content{
+            margin: 0 auto;
+            display: block;
+        }
+        &__card{
+            margin-bottom: 20px;
+
+        }
+        &__img {
+            display: none;
+
+        }
+    }
+
+    .portfollio{
+        &__gallery{
+            display: block;
+        }
+    }
+
+    .footer {
+        height: 40vh;
+        &__social{
+            position: relative;
+            top: 0;
+            left:0;
+            text-align: center;
+        }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .intro {
+        &__list{
+            margin:0;
+        }
+        &__social{
+            margin-left: 30px;
+        }
+    }
+
+    .nav {
+        &__logo{
+        }
+        &__list{
+            margin-top: 50px;
+            margin-left: 50%;
+        }
+    }
+
+    .slogan{
+        margin-top: 30%;
+    }
+
+
+    .about{
+        display: block;
+        &__title{
+            text-align: center;
+            width: 100%;
+            
+            &::after{
+                top: 60px;
+                left: 40%;
+            }
+        }
+        &__img{
+            display: none;
+        }
+    }  
+    
+    .skills {
+        background-image: url("../images/rwd2_skills.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 1050px;
+        &__title{
+            text-align: center;
+            margin: 0;
+            padding: 200px 0 0 0;
+            &::after{
+                top: 250px;
+                left: 45%;
+            }
+        }
+        &__span{
+            display: block;
+            margin-top: 100px;
+            text-align: center;
+        }
+    }
+
+    .services {
+        &__content{
+            margin: 100px auto;
+            display: block;
+        }
+        &__card{
+            margin-bottom: 20px;
+        }
+        &__title{
+            &::after{
+                top: 50px;
+                left: 45%;
+            }
+        }
+        &__img{
+            width: 100%;
+            
+        }
+    }
+    
+    .portfollio {
+        &__title{
+            &::after{
+                top: 50px;
+                left: 44%;
+            }
+        }
+    }
+
+    .footer {
+        text-align: center;
+        width: 100%;
+        
+        &__title {
+            margin: 0;
+        }
+        &__span{
+            margin: 0;
+        }
+        &__social{
+            position: relative;
+            left:0;
+            top:0;
+        }
+    }
+  }    
+  
