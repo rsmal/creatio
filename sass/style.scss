@@ -358,16 +358,17 @@ ul{
 
     .active {
         position: absolute;
-        top: 10%;
+        top: 12%;
         width: 100%;
         display: block;
         background-color: black;
+        z-index: 1;
     }
 
     .slogan {
         margin: 0;
         &__title{
-            padding-top: 70%;
+            padding-top: 50%;
         }
     }
 
