@@ -321,20 +321,19 @@ ul{
 
 
 @media  (max-width: 768px) {
-
-   
     .intro {
         background-position: center;
-
         &__info{
         display:none;
         }
     }
     
     .nav{
+        &__wrapper{
+            
+        }
         &__list{
-            display: none;
-            margin: 0;   
+            display: none;    
         }
         &__link{
             
@@ -358,6 +357,9 @@ ul{
     }
 
     .active {
+        position: absolute;
+        top: 10%;
+        width: 100%;
         display: block;
         background-color: black;
     }
@@ -365,7 +367,7 @@ ul{
     .slogan {
         margin: 0;
         &__title{
-            padding-top: 40%;
+            padding-top: 70%;
         }
     }
 
@@ -375,7 +377,7 @@ ul{
             text-align: center;
             font-size:25px;
             &::after{
-                left: 45%;
+                left: 10vw;
             }
         }
         &__img{
@@ -390,7 +392,7 @@ ul{
             padding-top: 90px;
             &::after{
                 top: 140px;
-                left: 40px;
+                left: 20vw;
             }
         }
         &__span{
@@ -422,6 +424,13 @@ ul{
     }
 
     .portfollio{
+        &__title{
+            &::after{
+                top: 45px;
+                left: 140px;
+            }
+        }
+
         &__gallery{
             display: block;
         }
@@ -431,7 +440,7 @@ ul{
         text-align: center;
         margin:0;
         padding: 0;
-        height: 50vh;
+        height: 300px;
         &__title{
             margin:0;
         }

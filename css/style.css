@@ -353,7 +353,6 @@ ul {
   }
   .nav__list {
     display: none;
-    margin: 0;
   }
   .nav__logo {
     position: relative;
@@ -371,6 +370,9 @@ ul {
     top: 20px;
   }
   .active {
+    position: absolute;
+    top: 10%;
+    width: 100%;
     display: block;
     background-color: black;
   }
@@ -378,7 +380,7 @@ ul {
     margin: 0;
   }
   .slogan__title {
-    padding-top: 40%;
+    padding-top: 70%;
   }
   .about {
     display: block;
@@ -388,7 +390,7 @@ ul {
     font-size: 25px;
   }
   .about__title::after {
-    left: 45%;
+    left: 10vw;
   }
   .about__img {
     display: none;
@@ -402,7 +404,7 @@ ul {
   }
   .skills__title::after {
     top: 140px;
-    left: 40px;
+    left: 20vw;
   }
   .skills__span {
     display: none;
@@ -425,6 +427,10 @@ ul {
   .services__img {
     display: none;
   }
+  .portfollio__title::after {
+    top: 45px;
+    left: 140px;
+  }
   .portfollio__gallery {
     display: block;
   }
@@ -432,7 +438,7 @@ ul {
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 50vh;
+    height: 300px;
   }
   .footer__title {
     margin: 0;
