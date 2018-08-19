@@ -1,9 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
+
 .container { 
-	max-width: 1500px;
+	max-width: 1700px;
+	margin: 0 auto;
+}
+
+.container__team { 
+	max-width: 1400px;
 	margin: 0 auto;
 }
 
@@ -14,8 +21,6 @@ a {
 ul{
     list-style-type: none;;
 }
-
-
 
 .intro {
     background-image: url("../images/hero.png");
@@ -28,8 +33,6 @@ ul{
         text-align: center;
         color: #fff;
         border-bottom: solid 1px #888;
-        
-      
     }
     &__list {
         display: flex;
@@ -69,7 +72,6 @@ ul{
     }
     &__list{
         display: flex;
-        
     }
     &__item {
         padding: 15px 10px;
@@ -79,10 +81,6 @@ ul{
             color: #5dc6e8;
             transition: 0.3s;     
         }
-    }
-    &__logo {
-        
-        
     }
 }
 .hamicon{
@@ -112,7 +110,6 @@ ul{
             background-color: rgba(255,255,255,0);
             transition: 0.3s;
         }
-
     }
 }
 
@@ -125,6 +122,7 @@ ul{
         font-size: 30px;
         text-transform: uppercase;
         position: relative;
+        color: #4c5152;
         margin-bottom: 50px;
         &::after{
             content: "";
@@ -141,8 +139,8 @@ ul{
     }
     &__img{
         margin-top: 30px;
-        height: 100%;
-        width: 100%;
+        height: 80%;
+        width: 80%;
     }
 }
 
@@ -157,6 +155,7 @@ ul{
         font-size: 30px;
         text-transform: uppercase;
         position: relative;
+        color: #4c5152;
         margin-bottom: 50px;
         margin-left: 20.5%;
         padding-top: 5%;
@@ -184,6 +183,7 @@ ul{
     &__title {
         font-size: 30px;
         text-transform: uppercase;
+        color: #4c5152;
         position: relative;
         &::after{
             content: "";
@@ -198,14 +198,14 @@ ul{
     margin-top:100px;
     display: grid;
     grid-template-columns: 20% 20% 20%;
-    margin-left: 20%;
+    margin-left: 23%;
     grid-gap: 100px;
     }
     &__card {
         margin: 0 auto;
         padding: 50px;
-        background-color: #e6e6e6;
-        width: 250px;
+        background-color: #f7f7f7;
+        
     }
     &__subtitle {
         margin-bottom: 10px;
@@ -229,11 +229,93 @@ ul{
     margin-bottom: 10px;
 }
 
+
+
+.team {
+    &__title {
+        margin: 100px;
+        text-align: center;
+        font-size: 30px;
+        color: #4c5152;
+        text-transform: uppercase;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 85px;
+            border-bottom: solid 3px #5dc6e8;
+            left: 48%;
+            top: 50px;      
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-gap: 2em;
+        text-align: center
+      
+    }
+    &__description {
+        margin: 50px 0 20px;
+        text-align: center;
+        font-size: 35px;
+    }
+    &__span{
+        font-size: 35px;
+        text-align: center;
+    }
+    &__card {
+        width: 100%;
+        position: relative;
+    }
+    &__overlay {
+        position: absolute;
+        background: rgba(0,0,0,0.6);
+        width: 100%;
+        height: 100%;
+        display: none;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.team__card:hover .team__overlay{
+    display: block;
+    
+    animation: yourAnimation 0.3s forwards 0s ease-out;
+    
+}
+
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0) scale(0);
+        }
+    100%{
+        transform: rotate(0) scale(1);
+        }
+}
+
+
+
+
+
+
+
 .portfollio {
     text-align: center;
+    
     &__title{
-        margin-top: 100px;
+        margin-top: 250px;
         font-size: 30px;
+        color: #4c5152;
         text-transform: uppercase;
         position: relative;
         &::after{
@@ -320,7 +402,7 @@ ul{
 
 
 
-@media  (max-width: 768px) {
+@media screen and (max-width: 767px)  {
     .intro {
         background-position: center;
         &__info{
@@ -362,8 +444,10 @@ ul{
         width: 100%;
         display: block;
         background-color: black;
-        z-index: 1;
+        z-index: 1; 
     }
+
+    
 
     .slogan {
         margin: 0;
@@ -424,8 +508,36 @@ ul{
         }
     }
 
+    .team{
+        &__title{
+            
+            &::after{
+                top: 45px;
+                left: 25%;
+            }
+        }
+        &__wrapper {
+            display: block;  
+            
+        }
+        &__span{
+            margin-bottom: 100px;
+        }
+
+        &__img{
+            margin: 0 auto;
+            width: 60%;
+        
+        }
+       
+    }
+    .team__card:hover .team__overlay{
+        display: none;
+    }
+
     .portfollio{
         &__title{
+            margin-top: 0;
             &::after{
                 top: 45px;
                 left: 140px;
@@ -458,3 +570,152 @@ ul{
   }
 
   
+  @media screen and (min-width: 768px) and (max-width: 1300px) {
+    body {
+        background-color: red;
+    }
+
+    .slogan {
+        margin: 0;
+        &__title{
+            padding-top: 30%;
+        }
+    }
+
+
+    .team{
+        &__title{
+            
+            &::after{
+                top: 45px;
+                left: 25%;
+            }
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 50% auto; 
+            grid-gap: 0px;
+        }
+        &__card{
+            text-align: center;
+        }
+        &__span{
+            margin-bottom: 100px;
+        }
+
+        &__img{
+            margin: 0 auto;
+            width: 70%;
+        }
+        &__overlay{
+            margin: 0 auto;
+            width: 70%;
+        }
+       
+    }
+
+
+
+    .portfollio{
+        &__title{
+            margin-top: 0;
+            &::after{
+                top: 45px;
+                left: 140px;
+            }
+        }
+
+        &__gallery{
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+        &__img{
+            margin: 0 auto;
+        }
+    }
+
+
+    .services{
+        
+        &__title{
+            margin-bottom: 50px;
+            &::after{
+                top: 45px;
+                left: 140px;
+            }
+        }
+        &__content{
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 0px;
+            grid-template-columns: 50% auto;
+        }
+        &__card{
+            margin-bottom: 60px;
+
+        }
+        &__img {
+            display: none;
+
+        }
+    }
+
+
+    .about{
+        display: block;
+        &__title{
+            text-align: center;
+            font-size:25px;
+            &::after{
+                left: 10vw;
+            }
+        }
+        &__img{
+            display: none;
+            
+        }
+    } 
+
+
+
+    .skills {
+        
+        width: 100%;
+        &__title{
+            padding-top: 90px;
+            &::after{
+                top: 140px;
+                left: 20vw;
+            }
+        }
+        &__span{
+            display: none;
+            text-align: center;
+        }
+    }
+
+
+
+    .footer {
+        text-align: center;
+        margin:0;
+        padding: 0;
+        
+        &__title{
+            margin:0;
+        }
+        &__span{
+            margin: 0;
+        }
+        &__social{
+            position: relative;
+            top: 0;
+            left:0;
+            text-align: center;
+        }
+    }
+
+
+
+
+  }
