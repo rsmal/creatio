@@ -98,6 +98,7 @@ ul {
   padding: 15px;
   background-color: white;
   border-radius: 20px;
+  left: 15%;
   width: calc(70% - 40px);
   color: black;
   z-index: 2;
@@ -258,6 +259,7 @@ ul {
 }
 
 .services__content {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -462,6 +464,12 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .fixed {
+    display: none;
+  }
+  #hide {
+    display: none;
+  }
   .intro {
     background-position: center;
   }
