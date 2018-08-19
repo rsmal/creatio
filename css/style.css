@@ -202,7 +202,7 @@ ul {
   font-size: 30px;
   text-transform: uppercase;
   position: relative;
-  color: #black;
+  color: black;
   margin-bottom: 50px;
   margin-left: 20.5%;
   padding-top: 5%;
@@ -511,7 +511,8 @@ ul {
     font-size: 25px;
   }
   .about__title::after {
-    left: 10vw;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .about__img {
     display: none;
@@ -522,10 +523,12 @@ ul {
   }
   .skills__title {
     padding-top: 90px;
+    color: red;
   }
   .skills__title::after {
     top: 140px;
-    left: 20vw;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .skills__span {
     display: none;
@@ -536,7 +539,8 @@ ul {
   }
   .services__title::after {
     top: 45px;
-    left: 140px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .services__content {
     margin: 0 auto;
@@ -550,7 +554,8 @@ ul {
   }
   .team__title::after {
     top: 45px;
-    left: 25%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .team__wrapper {
     display: block;
@@ -570,7 +575,8 @@ ul {
   }
   .portfollio__title::after {
     top: 45px;
-    left: 140px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .portfollio__list {
     margin: 0 auto;
@@ -651,7 +657,8 @@ ul {
   }
   .services__title::after {
     top: 45px;
-    left: 140px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .services__content {
     margin: 0 auto;
@@ -682,11 +689,11 @@ ul {
     width: 100%;
   }
   .skills__title {
+    margin: 0;
     padding-top: 90px;
   }
   .skills__title::after {
     top: 140px;
-    left: 20vw;
   }
   .skills__span {
     display: none;
