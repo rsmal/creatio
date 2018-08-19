@@ -99,6 +99,8 @@ ul {
   background-color: white;
   border-radius: 20px;
   left: 15%;
+  /*left: 50%;
+    transform: translate(-50%) !important;*/
   width: calc(70% - 40px);
   color: black;
   z-index: 2;

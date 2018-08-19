@@ -230,7 +230,7 @@
             menu: "#gallery-menu",
             random: true
         });
-    </script>
+</script>
 
 <script>
 window.onscroll = function() {myFunction()};
@@ -239,8 +239,14 @@ let navbar = document.getElementById("sticky");
 let sticky = navbar.offsetTop;
 let show   = document.getElementById("show");
 let hide = document.getElementById("hide");
+
+
+
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
+    let windowWidth = $(window).width();
+if(windowWidth > 320 &&  windowWidth < 1300){
+    
+}else if (window.pageYOffset >= sticky) {
     navbar.classList.add("fixed")
     show.classList.remove("show")
     show.classList.add("hide")
@@ -254,8 +260,6 @@ function myFunction() {
     hide.classList.add("hide")
   }
 }
-
-
 
 </script>
 </body>
