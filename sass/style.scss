@@ -14,6 +14,9 @@
 	margin: 0 auto;
 }
 
+
+
+
 a {
     color: inherit;
     text-decoration: none;
@@ -21,6 +24,26 @@ a {
 ul{
     list-style-type: none;;
 }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .intro {
     background-image: url("../images/hero.png");
@@ -83,7 +106,37 @@ ul{
         }
     }
 }
+
+.fixed{
+    position: fixed;
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+    width: calc(70% - 40px);
+    color: black;
+    z-index: 2;
+    animation: navbar 0.5s forwards 0s ease-out
+}
+
+@keyframes navbar{
+    0%{
+        transform: rotate(0) scale(0);
+        }
+    100%{
+        transform: rotate(0) scale(1);
+        }
+}
 .hamicon{
+    display: none;
+}
+
+
+
+.show {
+    display: block;
+}
+
+.hide {
     display: none;
 }
 
@@ -145,17 +198,18 @@ ul{
 }
 
 .skills {
-    background-image: url("../images/skills.png");
+    
+    background-image: url("../images/skills.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 672px;
-    color: white;
+  
     &__title{
         font-size: 30px;
         text-transform: uppercase;
         position: relative;
-        color: #4c5152;
+        color: #black;
         margin-bottom: 50px;
         margin-left: 20.5%;
         padding-top: 5%;
@@ -175,7 +229,21 @@ ul{
         font-size: 20px;
         max-width: 500px;
     }
+
+   
 }
+
+.design {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    &__span{
+        color: red; 
+        font-size: 60px; 
+    }
+    
+}
+
 
 .services {
     margin-top: 75px;
@@ -244,7 +312,8 @@ ul{
             position: absolute;
             width: 85px;
             border-bottom: solid 3px #5dc6e8;
-            left: 48%;
+            left:50%;
+            transform: translateX(-50%);
             top: 50px;      
         }
     }
@@ -303,17 +372,12 @@ ul{
         }
 }
 
-
-
-
-
-
-
 .portfollio {
     text-align: center;
     
     &__title{
         margin-top: 250px;
+        margin-bottom: 100px;
         font-size: 30px;
         color: #4c5152;
         text-transform: uppercase;
@@ -323,25 +387,24 @@ ul{
             position: absolute;
             width: 95px;
             border-bottom: solid 3px #5dc6e8;
-            left: 48%;
-            top: 50px;      
+            left: 50%;
+            top: 50px; 
+            transform: translateX(-50%);     
         }
         
     }
-    &__list {
-        margin-top: 75px;
-        display: flex;
-        justify-content: center;
-    }
-    &__item{
-        padding: 10px;   
-    }
     &__link{
+        padding: 0 10px;
         font-size: 20px;
         &:hover {
             color:red;
             transition: 0.3s;
         }
+    }
+    &__list{
+        display: grid;
+        
+        grid-template-columns: 33.33% 33.33% 33.33%;
     }
     &__gallery{
         max-width: 1024px;
@@ -349,10 +412,11 @@ ul{
         display: grid;
         grid-template-columns: 33% auto auto; 
     }
-    &__img{  
-        width: 300px;
+    &__img{
+        margin-top: 50px;
+        width: 450px;
         height: 300px;
-        padding: 20px;
+        
     }
 }
 
@@ -438,13 +502,16 @@ ul{
 
     }
 
+   
+
     .active {
         position: absolute;
-        top: 12%;
+        top: 8%;
         width: 100%;
         display: block;
         background-color: black;
         z-index: 1; 
+        animation: navbar 0.5s forwards 0s ease-out
     }
 
     
@@ -543,7 +610,11 @@ ul{
                 left: 140px;
             }
         }
-
+        &__list{
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 100%;
+        }
         &__gallery{
             display: block;
         }
@@ -571,9 +642,7 @@ ul{
 
   
   @media screen and (min-width: 768px) and (max-width: 1300px) {
-    body {
-        background-color: red;
-    }
+  
 
     .slogan {
         margin: 0;
@@ -583,12 +652,14 @@ ul{
     }
 
 
+
     .team{
         &__title{
             
             &::after{
                 top: 45px;
-                left: 25%;
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
         &__wrapper {
@@ -621,16 +692,18 @@ ul{
             margin-top: 0;
             &::after{
                 top: 45px;
-                left: 140px;
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
-
-        &__gallery{
+        &__list{
             display: grid;
+            
             grid-template-columns: 50% auto;
+            
         }
         &__img{
-            margin: 0 auto;
+            margin-bottom: 50px;
         }
     }
 
@@ -679,7 +752,6 @@ ul{
 
 
     .skills {
-        
         width: 100%;
         &__title{
             padding-top: 90px;
@@ -700,6 +772,8 @@ ul{
         text-align: center;
         margin:0;
         padding: 0;
+        height: 100%;
+  
         
         &__title{
             margin:0;
@@ -715,7 +789,16 @@ ul{
         }
     }
 
+.nav {
+    &__list {
+        
 
+    }
+}
+.fixed {
+    justify-content: space-evenly;
+   
+}
 
 
   }

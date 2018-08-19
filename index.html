@@ -35,11 +35,12 @@
                 </div>
             
         </div>
-        <nav class="nav container">
+        <nav class="nav container" id="parent">
                   
             <a href="#" id="toggle"><i class="fas fa-bars hamicon"></i></a> 
-            <div class="nav__wrapper" > 
-            <a class="nav__logo" href="#"><img src="images/logo.png" alt="logo" class="intro__logo"></a>
+            <div class="nav__wrapper " id="sticky" > 
+            <a class="nav__logo show" id="show" href="#"><img  src="images/logo.png" alt="logo" class="intro__logo"></a>
+            <a class="nav__logo hide" id="hide" href="#"><img  src="images/fixed__logo.png" alt="logo" class="intro__logo"></a>
             <ul class="nav__list" id="rwd" >    
                 <li class="nav__item"><a class="nav__link" href="#intro">Home</a></li>
                 <li class="nav__item"><a class="nav__link" href="#about">O firmie</a></li>
@@ -67,8 +68,19 @@
     </section>
 
     <section class="skills">
+            
             <h2 class="skills__title">Co potrafimy?</h2>
             <p class="skills__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="design container__skills">
+                <p class="design__span">Tutaj trzeba cos wymyślic moim zdaniem innego</p>
+                
+            </div>
+              
+
+                
+            
+
     </section>
 
     <section class="services" id="services">
@@ -138,37 +150,30 @@
 
 </section>
 
-
-
-
-
-
-
-
-    <section class="portfollio" id="portfollio">
+    <section class="portfollio container" id="portfollio">
             <h2 class="portfollio__title">Portfollio</h2>
-            <ul class="portfollio__list">
-                <li class="portfollio__item" data-filter="all"><a class="portfollio__link" href="#">Show all</a> </li>
-                <li class="portfollio__item" data-filter="all"><a class="portfollio__link" href="#">Art</a></li>
-                <li class="portfollio__item"><a class="portfollio__link" href="#">Science</a></li>
-                <li class="portfollio__item"><a class="portfollio__link" href="#">Branding</a></li>
-            </ul>
+           
 
-             <div class="portfollio__gallery">
-                    <img class="portfollio__img post art" src="images/galerry1.jpeg" alt="">
-                    <img class="portfollio__img post science" src="images/gallery2.jpeg" alt="">
-                    <img class="portfollio__img post branding" src="images/gallery3.jpeg" alt="">
-                    <img class="portfollio__img post science" src="images/gallery4.jpeg" alt="">
-                    <img class="portfollio__img post branding" src="images/gallery5.jpeg" alt="">
-                    <img class="portfollio__img post branding" src="images/gallery6.jpeg" alt="">
-             </div>   
+
+            <div id="gallery-menu"> 
+                <a class="portfollio__link" href="#" data-liquo="all" class="btn btn-primary">All</a> 
+                <a class="portfollio__link" href="#" data-liquo="1" class="btn btn-warning">Category 1</a> 
+                <a class="portfollio__link" href="#" data-liquo="2" class="btn btn-warning">Category 2</a> 
+                <a class="portfollio__link" href="#" data-liquo="3" class="btn btn-warning">Category 3</a> 
+            </div>
+    
+               
+
+                 <ul class="portfollio__list" id="gallery" >
+                        <li class="portfollio__item" data-liquo="1"> <img class="portfollio__img" src="images/galerry1.jpeg" /> </li>
+                        <li class="portfollio__item" data-liquo="2"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
+                        <li class="portfollio__item" data-liquo="3"> <img class="portfollio__img" src="images/gallery3.jpeg" /> </li>
+                        <li class="portfollio__item" data-liquo="3"> <img class="portfollio__img" src="images/gallery4.jpeg" /> </li>
+                        <li class="portfollio__item" data-liquo="1"> <img class="portfollio__img" src="images/gallery5.jpeg" /> </li>
+                        <li class="portfollio__item" data-liquo="2"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
+                </ul>
+         
     </section>
-
-
-
-
-
-
 
     <footer class="footer" id="footer">
         <h2 class="footer__title">Creatio Studio</h2>
@@ -197,6 +202,8 @@
 
 
     <script>
+     
+
     (function() {
         var menu = document.getElementById('rwd')
             menulink= document.getElementById('toggle');
@@ -205,8 +212,48 @@
                 e.preventDefault();
             });
     })();
-        
+
+    </script>
+    <script>
+            $(document).ready(function(){
+                        $("#gallery").categorygallery();
+                    });
     </script>
 
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="liquo/liquo.min.js"></script> 
+<script>
+        $("#gallery").liquo({
+            menu: "#gallery-menu",
+            random: true
+        });
+    </script>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+let navbar = document.getElementById("sticky");
+let sticky = navbar.offsetTop;
+let show   = document.getElementById("show");
+let hide = document.getElementById("hide");
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("fixed")
+    show.classList.remove("show")
+    show.classList.add("hide")
+    hide.classList.remove("hide")
+    hide.classList.add("show")
+  } else {
+    navbar.classList.remove("fixed");
+    show.classList.remove("hide")
+    show.classList.add("show")
+    hide.classList.remove("show")
+    hide.classList.add("hide")
+  }
+}
+
+
+
+</script>
 </body>
 </html>
