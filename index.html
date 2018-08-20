@@ -33,16 +33,17 @@
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-            
         </div>
-        <nav class="nav container" id="parent">
-                  
+
+       
+
+        <nav class="nav container" id="1">        
             <a href="#" id="toggle"><i class="fas fa-bars hamicon"></i></a> 
-            <div class="nav__wrapper " id="sticky" > 
-            <a class="nav__logo show" id="show" href="#"><img  src="images/logo.png" alt="logo" class="intro__logo"></a>
-            <a class="nav__logo hide" id="hide" href="#"><img  src="images/fixed__logo.png" alt="logo" class="intro__logo"></a>
+            <div class="nav__wrapper nav__list " id="sticky" > 
+            <a class="nav__logo show " id="show" href="#1"><img  src="images/logo.png" alt="logo" class="intro__logo"></a>
+            <a class="nav__logo hide " id="hide" href="#1"><img  src="images/fixed__logo.png" alt="logo" class="intro__logo"></a>
             <ul class="nav__list" id="rwd" >    
-                <li class="nav__item"><a class="nav__link" href="#intro">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#1">Home</a></li>
                 <li class="nav__item"><a class="nav__link" href="#about">O firmie</a></li>
                 <li class="nav__item"><a class="nav__link" href="#services">Oferta</a></li>
                 <li class="nav__item"><a class="nav__link" href="#portfollio">Portfollio</a></li>
@@ -57,7 +58,11 @@
         </div>   
     </section>
 
-    <section class="about" id="about">
+    <div class="arrow nav__list " >
+            <a class="nav__logo " id="" href="#1"> <i id="arrow" class="arrow__icon  fas fa-arrow-circle-up"></i></a>a
+    </div>
+
+    <section class="about page-section" id="about">
             <div class="about__content">
                 <h2 class="about__title">Kim jestesmy?</h2>
                 <p class="about__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -107,8 +112,31 @@
             </div>
         </div>
 
-        <img class="services__img" src="images/Layer 14.png" alt="services">
+    </section>
 
+
+    <section class="banner">
+            <div class="banner__content container__banner">
+                <div class="banner__card">
+                    <i class="banner__icon fas fa-laptop"></i>
+                    <p class="banner__subtitle">231</p>
+                    <h3 class="banner__title">Compleated projects</h3>
+                </div>
+
+                <div class="banner__card">
+                        <i class="banner__icon far fa-clock"> </i>
+                        <p class="banner__subtitle">500h</p>
+                        <h3 class="banner__title">Time spent</h3>
+                </div>
+
+                <div class="banner__card">
+                        <i class="banner__icon far fa-smile-beam"></i>
+                        <p class="banner__subtitle">228</p>
+                        <h3 class="banner__title">Hapy clients</h3>
+                </div>
+             </div>
+    
+            
     </section>
 
 
@@ -163,16 +191,58 @@
             </div>
     
                
-
+            <div>
                  <ul class="portfollio__list container" id="gallery" >
+
+
+                     <div class="portfollio__card" >
+                        <div class="portfollio__overlay"> 
+                            <h4 class="portfollio__description">img description</h4>
+                        </div>
                         <li class="portfollio__item" data-liquo="1"> <img class="portfollio__img" src="images/galerry1.jpeg" /> </li>
-                        <li class="portfollio__item" data-liquo="2"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
-                        <li class="portfollio__item" data-liquo="3"> <img class="portfollio__img" src="images/gallery3.jpeg" /> </li>
-                        <li class="portfollio__item" data-liquo="3"> <img class="portfollio__img" src="images/gallery4.jpeg" /> </li>
-                        <li class="portfollio__item" data-liquo="1"> <img class="portfollio__img" src="images/gallery5.jpeg" /> </li>
-                        <li class="portfollio__item" data-liquo="2"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
+                    </div>
+
+                    <div class="portfollio__card" >
+                            <div class="portfollio__overlay"> 
+                                <h4 class="portfollio__description">img description</h4>
+                            </div>
+                            <li class="portfollio__item" data-liquo="1"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
+                    </div>
+
+                    <div class="portfollio__card" >
+                            <div class="portfollio__overlay"> 
+                                <h4 class="portfollio__description">img description</h4>
+                            </div>
+                            <li class="portfollio__item" data-liquo="1"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
+                    </div>
+
+                    <div class="portfollio__card" >
+                            <div class="portfollio__overlay"> 
+                                <h4 class="portfollio__description">img description</h4>
+                            </div>
+                            <li class="portfollio__item" data-liquo="2"> <img class="portfollio__img" src="images/gallery3.jpeg" /> </li>
+                    </div>
+
+                    <div class="portfollio__card" >
+                            <div class="portfollio__overlay"> 
+                                <h4 class="portfollio__description">img description</h4>
+                            </div>
+                            <li class="portfollio__item" data-liquo="2"> <img class="portfollio__img" src="images/gallery4.jpeg" /> </li>
+                    </div>
+
+
+                    <div class="portfollio__card" >
+                            <div class="portfollio__overlay"> 
+                                <h4 class="portfollio__description">img description</h4>
+                            </div>
+                            <li class="portfollio__item" data-liquo="3"> <img class="portfollio__img" src="images/gallery5.jpeg" /> </li>
+                    </div>
+
+                   
+                        
+                        
                 </ul>
-         
+            </div>    
     </section>
 
     <footer class="footer" id="footer">
@@ -220,8 +290,7 @@
                     });
     </script>
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="liquo/liquo.min.js"></script> 
@@ -232,6 +301,29 @@
         });
 </script>
 
+
+<script>
+  
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 2000) {
+        $("#arrow").addClass("arrow__active");
+    } else {
+        $("#arrow").removeClass("arrow__active");
+    }
+});
+   
+
+</script>
+
+
+
+
+
+
+
+
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -239,7 +331,7 @@ let navbar = document.getElementById("sticky");
 let sticky = navbar.offsetTop;
 let show   = document.getElementById("show");
 let hide = document.getElementById("hide");
-
+let container = document.getElementById("1");
 
 
 function myFunction() {
@@ -248,19 +340,38 @@ if(windowWidth > 320 &&  windowWidth < 1300){
     
 }else if (window.pageYOffset >= sticky) {
     navbar.classList.add("fixed")
+    navbar.classList.remove("nav__wrapper")
+    navbar.classList.add("fixed___flex")
     show.classList.remove("show")
     show.classList.add("hide")
     hide.classList.remove("hide")
     hide.classList.add("show")
+    container.classList.remove("container")
   } else {
     navbar.classList.remove("fixed");
+    navbar.classList.add("nav__wrapper")
+    navbar.classList.remove("fixed___flex");
     show.classList.remove("hide")
     show.classList.add("show")
     hide.classList.remove("show")
     hide.classList.add("hide")
+    container.classList.add("container")
   }
 }
 
+</script>
+
+<script>
+    
+$( '.nav__list a' ).on( 'click', function(e){
+	
+    let href = $(this).attr( 'href' );
+    $( 'html, body' ).animate({
+          scrollTop: $( href ).offset().top - 300
+    }, '300' );
+    e.preventDefault();
+
+  });
 </script>
 </body>
 </html>
