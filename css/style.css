@@ -35,8 +35,6 @@ ul {
   left: 100%;
   transform: translateX(-100%);
   display: none;
-  height: 30px;
-  width: 30px;
   z-index: 1;
   opacity: 0.5;
   animation: arrow__anim .4s forwards 0s ease-out;
