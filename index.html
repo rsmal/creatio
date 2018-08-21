@@ -61,7 +61,7 @@
    
 
     <div class="arrow nav__list " >
-            <a class="nav__logo arrow"  href="#1"> <img  id="arrow" class="arrow__icon" src="/images/arrow_black.png" alt="arrow"> </a>
+            <a class="nav__logo arrow"  href="#1"> <img  id="arrow" class="arrow__icon"  src="images/arrow_black.png" alt="arrow"> </a>
     </div>
 
     <section class="about page-section" id="about">
@@ -74,14 +74,33 @@
             <img class="about__img" src="images/about.png" alt="about">
     </section>
 
-    <section class="skills">
+    <section class="skill">
+            <h2 class="skill__title"> Co robimy ?</h2>
+
+            <div class="skill__wrapper ">
+
+                <div class="skill__card">
+                    <img class="skill__img" src="images/skill__box1.png" alt="box1">
+                    <h3 class="skill__subtitle">Strony internetowe</h3>
+                    <p class="skill__description">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently </p>
+                    <a href="" class="skill__link">zobacz więcej</a>
+                </div>
             
-        <h1 class="skills__h"> do zmiany !!!</h1> 
-        <h1 class="skills__h"> do zmiany !!!</h1> 
-        <h1 class="skills__h"> do zmiany !!!</h1> 
-        <h1 class="skills__h"> do zmiany !!!</h1> 
-        <h1 class="skills__h"> do zmiany !!!</h1> 
-                
+                <div class="skill__card">
+                        <img class="skill__img" src="images/skill__box2.png" alt="box2">
+                        <h3 class="skill__subtitle">Strony internetowe</h3>
+                        <p class="skill__description">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently </p>
+                        <a href="" class="skill__link">zobacz więcej</a>
+                </div>
+
+                <div class="skill__card">
+                        <img class="skill__img" src="images/skill__box3.png" alt="box3">
+                        <h3 class="skill__subtitle">Strony internetowe</h3>
+                        <p class="skill__description">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently </p>
+                        <a href="" class="skill__link">zobacz więcej</a>
+                </div>
+            </div> 
+                       
     </section>
 
     <section class="services" id="services">
@@ -347,12 +366,12 @@ $( '.nav__list a' ).on( 'click', function(e){
 
 
 <script> 
-
 $(".arrow__icon") .mouseover(function () {
    this.src= "images/arrow_blue.png"
 }).mouseout(function () {
     this.src= "images/arrow_black.png"
 });
+
 
 </script>
 

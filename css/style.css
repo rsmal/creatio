@@ -136,9 +136,9 @@ ul {
   position: fixed;
   padding: 15px;
   background-color: white;
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
   /*left: 50%;
     
     transform: translate(-50%) !important;*/
@@ -235,19 +235,103 @@ ul {
   width: 80%;
 }
 
-.skills {
-  background-image: url("../images/skills.jpg");
+.skill {
+  background-image: url("../images/services.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100%;
   text-align: center;
-  color: red;
-  font-size: 50px;
 }
 
-.skills__h {
-  padding: 20px;
+.skill__title {
+  padding-top: 50px;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.skill__title::after {
+  content: "";
+  position: absolute;
+  width: 95px;
+  border-bottom: solid 3px #5dc6e8;
+  left: 50%;
+  top: 95px;
+  transform: translateX(-50%);
+}
+
+.skill__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.skill__card {
+  margin: 30px 50px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 50px;
+  position: relative;
+}
+
+.skill__subtitle {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.skill__subtitle::after {
+  content: "";
+  position: absolute;
+  width: 95px;
+  border-bottom: solid 4px #2e93b4;
+  left: 21%;
+  top: -250%;
+  transform: translateX(-50%);
+}
+
+.skill__subtitle::before {
+  content: "";
+  position: absolute;
+  width: 95px;
+  border-bottom: solid 4px #2e93b4;
+  left: 80%;
+  top: -250%;
+  transform: translateX(-50%);
+}
+
+.skill__img {
+  margin-bottom: 20px;
+}
+
+.skill__description {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.skill__link {
+  position: absolute;
+  font-size: 25px;
+  top: 93%;
+  left: 50%;
+  color: white;
+  transform: translateX(-50%);
+  border: solid 4px #2e93b4;
+  background-color: #2e93b4;
+  padding: 10px 30px;
+}
+
+.skill__link:hover {
+  transition: 0.3s;
+  color: #2e93b4;
+  background-color: #fff;
+  border: solid 4px #fff;
 }
 
 .design {
@@ -583,23 +667,6 @@ ul {
   .about__img {
     display: none;
   }
-  .skills {
-    background-image: url("../images/rwd__skills.png");
-    width: 100%;
-  }
-  .skills__title {
-    padding-top: 90px;
-    color: red;
-  }
-  .skills__title::after {
-    top: 140px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .skills__span {
-    display: none;
-    text-align: center;
-  }
   .services__title {
     margin-bottom: 50px;
   }
@@ -750,20 +817,6 @@ ul {
   }
   .about__img {
     display: none;
-  }
-  .skills {
-    width: 100%;
-  }
-  .skills__title {
-    margin: 0;
-    padding-top: 90px;
-  }
-  .skills__title::after {
-    top: 140px;
-  }
-  .skills__span {
-    display: none;
-    text-align: center;
   }
   .footer {
     text-align: center;
