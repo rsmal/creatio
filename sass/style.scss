@@ -20,7 +20,7 @@
 }
 
 .container__footer{ 
-	max-width: 1900px;
+	max-width: 1500px;
 	margin: 0 auto;
 }
 
@@ -508,7 +508,7 @@ ul{
 .footer{
     margin-top: 100px;
     background-color: #282828;
-    height: 30vh;
+    height: 100%;
     color: #c9cacb;
     position: relative;
     
@@ -528,14 +528,15 @@ ul{
     &__content{
         display: flex;
         justify-content: center;
+        
         flex-wrap: wrap;
     }
     &__card{
-        margin: 0 200px;
+        margin: 0 5%;
         padding: 30px 0;
     }
     &__title--1{
-        margin-left: 25%;
+        margin-left: 22%;
         width: 100%;
         font-size: 25px;
         padding: 10px 0;
@@ -545,7 +546,7 @@ ul{
             position: absolute;
             width: 70px;
             border-bottom: solid 3px #5dc6e8;
-            left: 7%;
+            left: 8%;
             top: 50px; 
             transform: translateX(-50%);  
              
@@ -579,7 +580,7 @@ ul{
     }
     &__center__card {
         width: 100%;
-        margin-left: 80px;
+        margin-left: 50px;
     }
 }
 
@@ -766,8 +767,8 @@ ul{
         }
         &__wrapper {
             display: flex;
-             justify-content: center;
-              flex-wrap: wrap;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         &__card{
             text-align: center;
@@ -786,6 +787,8 @@ ul{
         }
        
     }
+
+   
 
 
 
@@ -808,10 +811,6 @@ ul{
         &__card {
         }
     }
-
-
-    
-
     .about{
         display: block;
         &__title{
@@ -826,13 +825,7 @@ ul{
             display: none;  
         }
     } 
-
-    
-
-
-
-    
-
+}
 
 .fixed {
     justify-content: space-evenly;
