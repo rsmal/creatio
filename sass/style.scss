@@ -45,11 +45,8 @@ ul{
         width: 30px;
         z-index: 1;
         opacity: 0.5;
-        transition: 0.3s;
         animation: arrow__anim .4s forwards 0s ease-out;
         &:hover{ 
-            
-            z-index: 2;
             opacity: 1;
         }
     }
