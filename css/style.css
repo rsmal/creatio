@@ -520,11 +520,11 @@ ul {
 }
 
 .footer__logo {
-  margin-left: 25%;
+  margin-left: 10%;
 }
 
 .footer__info {
-  margin-left: 25%;
+  margin-left: 10%;
   width: 100%;
   padding: 10px 0;
   display: flex;
@@ -537,12 +537,12 @@ ul {
 }
 
 .footer__card {
-  margin: 0 5%;
+  margin: 0 auto;
   padding: 30px 0;
 }
 
 .footer__title--1 {
-  margin-left: 22%;
+  margin-left: 16%;
   width: 100%;
   font-size: 25px;
   padding: 10px 0;
@@ -560,7 +560,7 @@ ul {
 }
 
 .footer__title--2 {
-  margin-left: 25%;
+  margin-left: 10%;
   font-size: 25px;
   width: 100%;
   padding: 10px 0;
