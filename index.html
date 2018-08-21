@@ -58,8 +58,10 @@
         </div>   
     </section>
 
+   
+
     <div class="arrow nav__list " >
-            <a class="nav__logo " id="" href="#1"> <i id="arrow" class="arrow__icon  fas fa-arrow-circle-up"></i></a>a
+            <a class="nav__logo arrow"  href="#1"> <img  id="arrow" class="arrow__icon" src="/images/arrow_black.png" alt="arrow"> </a>
     </div>
 
     <section class="about page-section" id="about">
@@ -342,5 +344,16 @@ $( '.nav__list a' ).on( 'click', function(e){
     e.preventDefault();
   });
 </script>
+
+
+<script> 
+$('.arrow__icon').hover(function(){
+    $(this).attr('src','/images/arrow_blue.png');
+},function(){
+     $(this).attr('src','/images/arrow_black.png'); 
+});
+
+</script>
+
 </body>
 </html>
