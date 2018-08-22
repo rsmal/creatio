@@ -38,6 +38,20 @@ ul{
 
 
 
+
+.modal {
+    animation: moda__anim .3s forwards 0s ease-out;
+}
+
+@keyframes moda__anim{
+    0%{
+        transform: rotate(0) scale(0) ;
+        }
+    100%{
+        transform: rotate(0) scale(1) ;
+        }
+}
+
 .arrow { 
     &__icon{   
         padding: 20px;
