@@ -169,50 +169,49 @@
                  <ul class="portfollio__list container" id="gallery" >
 
 
-                     <div class="portfollio__card" >
+                        <a href="#ex1" rel="modal:open" ><div class="portfollio__card" >
                         <div class="portfollio__overlay"> 
-                                <a href="#ex1" rel="modal:open">   <h4 class="portfollio__description">img description</h4></a>
+                               <h4 class="portfollio__description">img description</h4>
                         </div>
                         <li class="portfollio__item" data-liquo="1"> <img class="portfollio__img" src="images/galerry1.jpeg" /> </li>
-                    </div>
+                    </div></a>
 
-                    <div class="portfollio__card" >
+                    <a href="#ex1" rel="modal:open" ><div class="portfollio__card" >
                             <div class="portfollio__overlay"> 
-                                    <a href="#ex1" rel="modal:open">  <h4 class="portfollio__description">img description</h4></a>
+                                    <h4 class="portfollio__description">img description</h4>
                             </div>
-                            <li class="portfollio__item" data-liquo="1"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
-                    </div>
+                            <li class="portfollio__item" data-liquo="2"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
+                    </div></a>
 
-                    <div class="portfollio__card" >
+                    <a href="#ex1" rel="modal:open" ><div class="portfollio__card" >
                             <div class="portfollio__overlay"> 
-                                    <a href="#ex1" rel="modal:open">  <h4 class="portfollio__description">img description</h4></a>
+                                    <h4 class="portfollio__description">img description</h4>
                             </div>
-                            <li class="portfollio__item" data-liquo="1"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
-                    </div>
+                            <li class="portfollio__item" data-liquo="3"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
+                    </div></a>
 
-                    <div class="portfollio__card" >
+                    <a href="#ex1" rel="modal:open" > <div class="portfollio__card" >
                             <div class="portfollio__overlay"> 
-                                    <a href="#ex1" rel="modal:open"> <h4 class="portfollio__description">img description</h4></a>
+                                    <h4 class="portfollio__description">img description</h4>
                             </div>
-                            <li class="portfollio__item" data-liquo="2"> <img class="portfollio__img" src="images/gallery3.jpeg" /> </li>
-                    </div>
+                            <li class="portfollio__item" data-liquo="2"> <img class="portfollio__img" src="images/galerry1.jpeg" /> </li>
+                        </div></a>
+    
+                        <a href="#ex1" rel="modal:open" ><div class="portfollio__card" >
+                                <div class="portfollio__overlay"> 
+                                      <h4 class="portfollio__description">img description</h4>
+                                </div>
+                                <li class="portfollio__item" data-liquo="1"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
+                        </div></a>
+    
+                        <a href="#ex1" rel="modal:open" > <div class="portfollio__card" >
+                                <div class="portfollio__overlay"> 
+                                        <h4 class="portfollio__description">img description</h4>
+                                </div>
+                                <li class="portfollio__item" data-liquo="3"> <img class="portfollio__img" src="images/gallery2.jpeg" /> </li>
+                        </div> </a>
 
-                    <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                    <a href="#ex1" rel="modal:open"> <h4 class="portfollio__description">img description</h4></a>
-                            </div>
-                            <li class="portfollio__item" data-liquo="2"> <img class="portfollio__img" src="images/gallery4.jpeg" /> </li>
-                    </div>
-
-
-                    <div class="portfollio__card" >
-                            <div class="portfollio__overlay">
-                            
-                                 <a href="#ex1" rel="modal:open"> <h4 class="portfollio__description">img description</h4>
-                            </div>
-                             <li class="portfollio__item" data-liquo="3"> <img class="portfollio__img" src="images/gallery5.jpeg" /> </li> 
-                    </div>
-
+                    
                    
                     
                         
@@ -222,7 +221,7 @@
 
     <div id="ex1" class="modal">
             <p>Thanks for clicking. That felt good.</p>
-            <a href="#" rel="modal:close">Close</a>
+            
     </div>
 
 
@@ -338,15 +337,13 @@
         <div class="footer__border">
 
             <div class="footer__social container__footer__down">
+                    <p class="footer__copyrights">© Copyrights Creatio Studio 2018 </p>
 
                     <div class="footer__icons">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-
-
-                <p class="footer__copyrights">© Copyrights Creatio Studio 2018 </p>
+                    </div>
             </div>
         </div>
 
@@ -371,11 +368,7 @@
             });
     })();
     </script>
-    <script>
-            $(document).ready(function(){
-                        $("#gallery").categorygallery();
-                    });
-    </script>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -463,8 +456,6 @@ $(".arrow__icon") .mouseover(function () {
 }).mouseout(function () {
     this.src= "images/arrow_black.png"
 });
-
-
 </script>
 
 </body>

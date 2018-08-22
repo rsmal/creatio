@@ -401,7 +401,8 @@ ul{
     &__description {
         padding-top: 20px;
         text-align: center;
-        font-size: 24px;
+        font-weight: 400;
+        font-size: 20px;
     }
     &__span{
         font-size: 18px;
@@ -483,9 +484,7 @@ ul{
     }
     &__list{
         display: flex;
-        justify-content: space-around; 
         flex-wrap: wrap;
-        padding: 20px;
     }
     &__img{
         width: 100%;
@@ -507,7 +506,7 @@ ul{
     }
     &__card{
         position: relative;
-        margin: 20px 0 ;
+        margin: 20px;
       
     }
     &__description{
@@ -543,7 +542,7 @@ ul{
     &__info {
         margin-left: 10%;
         width: 100%;
-        padding: 10px 0;
+        padding: 3px 0;
         display: flex;
     }
     &__content{
@@ -556,7 +555,7 @@ ul{
         padding: 30px 0;
     }
     &__title--1{
-        margin-left: 7%;
+        margin-left: 10%;
         width: 100%;
         font-size: 18px;
         font-weight: bold;
@@ -567,8 +566,8 @@ ul{
             position: absolute;
             width: 70px;
             border-bottom: solid 3px #5dc6e8;
-            left: 11%;
-            top: 50px; 
+            left: 9%;
+            top: 40px; 
             transform: translateX(-50%);  
              
         }
@@ -587,7 +586,7 @@ ul{
             width: 70px;
             border-bottom: solid 3px #5dc6e8;
             left: 20%;
-            top: 50px; 
+            top: 40px; 
             transform: translateX(-50%);  
              
         }
@@ -619,12 +618,14 @@ ul{
     &__border{
         border-top: solid 1px #888;
     }
-
+    &__icons{
+        padding-left: 70px;
+    }
 }
 
 .container__footer__down{
     margin:0 auto;
-    max-width: 2150px;
+    max-width: 2100px;
 }
 
 .ficon{
