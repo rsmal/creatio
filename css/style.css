@@ -540,7 +540,7 @@ ul {
 
 .footer__content {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -597,7 +597,7 @@ ul {
 
 .footer__center__card {
   width: 100%;
-  margin-left: 2%;
+  margin-left: 20px;
 }
 
 .footer__social {
