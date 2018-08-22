@@ -35,6 +35,16 @@ ul {
 
 .modal {
   animation: moda__anim .3s forwards 0s ease-out;
+  max-width: 1200px;
+}
+
+.modal__img {
+  height: 700px;
+  margin-left: 60px;
+}
+
+.blocker {
+  z-index: 4;
 }
 
 @keyframes moda__anim {
