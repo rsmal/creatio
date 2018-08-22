@@ -41,20 +41,15 @@ ul{
 
 .modal {
     animation: moda__anim .3s forwards 0s ease-out;
-    
     max-width: 1200px;
     &__img{
         height: 700px;
         margin-left: 60px;
-    }
-   
-
-    
-    
+    }  
 }
 
 .blocker{
-    z-index: 4;;
+    z-index: 4;
 }
 
 
