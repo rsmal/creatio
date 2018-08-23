@@ -66,6 +66,9 @@ ul{
     &__wrapper {
         display: flex;
         justify-content: space-around;
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,0.4);
+        
+        
     }
     &__list{
         display: flex;
@@ -88,7 +91,7 @@ ul{
 
 .fixed{
     position: fixed;
-    padding: 15px;
+    padding: 10px;
     background-color: white;
     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.4);
     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.4);
@@ -282,6 +285,7 @@ ul{
         padding: 30px 0;
     }
     &__title--1{
+        text-transform: uppercase;
         margin-left: 10%;
         width: 100%;
         font-size: 18px;
@@ -301,6 +305,7 @@ ul{
         
     }
     &__title--2{
+        text-transform: uppercase;
         margin-left: 10%;
         font-size: 18px;
         font-weight: bold;
@@ -321,7 +326,11 @@ ul{
     }
     
     &__span{
-        margin-top: 10px;
+        margin-top: 7px;
+        &:hover{
+            color: #5dc6e8;
+            transition: 0.3s;
+        }
     }
     &__center__column{
         display: flex;
@@ -336,10 +345,13 @@ ul{
     
     &__social{
         display: flex;
-        justify-content: space-around;
+        padding-top: 20px;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
     &__copyrights{
+        font-size: 12px;
+        color: #999c9f ;
         padding-top: 10px;
     }
     &__border{
@@ -347,16 +359,19 @@ ul{
     }
     &__icons{
         padding-left: 70px;
+        font-size: 15px;
+        color: #999c9f;
     }
 }
 
 .container__footer__down{
     margin:0 auto;
-    max-width: 2100px;
+    max-width: 1800px;
 }
 
 .ficon{
     color: #5dc6e8;
     margin-top: 13px;
+    font-size:  10px;
     padding-right: 15px;
 }
