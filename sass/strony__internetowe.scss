@@ -153,28 +153,28 @@ ul{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 25%;
+    
 }
 .box-2{
     background-image: url("../images/services__box2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 25%;
+    
 }
 .box-3{
     background-image: url("../images/services__box3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 25%;
+    
 }
 .box-4{
     background-image: url("../images/services__box4.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 25%;
+    
 }
 
 
@@ -197,6 +197,7 @@ ul{
     &__card{
         margin-bottom: 50px;
         position: relative;
+        width: 592px;
         
     }
     &__title{

@@ -134,7 +134,7 @@ ul{
     }
 }
 
-.fab {
+.introicon {
     padding: 10px;
     font-size: 20px;
         &:hover {
@@ -474,8 +474,9 @@ ul{
     background-color: #f3f3f3;
     
     &__title{
+        padding-top: 50px;
         margin-top: 150px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         font-size: 30px;
         color: #222222;
         text-transform: uppercase;
@@ -486,7 +487,7 @@ ul{
             width: 95px;
             border-bottom: solid 3px #5dc6e8;
             left: 50%;
-            top: 50px; 
+            top: 90px; 
             transform: translateX(-50%);     
         }
         
@@ -501,8 +502,10 @@ ul{
     }
     &__list{
         display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
-        justify-content: center;
+        
+        
     }
     &__img{
         width: 100%;
@@ -525,6 +528,7 @@ ul{
     &__card{
         position: relative;
         margin: 20px;
+        
     }
     &__description{
         color: #fff;
@@ -543,7 +547,7 @@ ul{
 }
 
 .footer{
-    margin-top: 100px;
+    
     background-color: #282828;
     height: 100%;
     color: #c9cacb;
@@ -634,19 +638,23 @@ ul{
     &__social{
         display: flex;
         padding-top: 20px;
+        padding-bottom: 10px;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     &__copyrights{
         font-size: 12px;
-        color: #999c9f ;
-        padding-top: 10px;
+        color: #999c9f;
+        padding-top: 5px;
+        
+        
     }
     &__border{
         border-top: solid 1px #888;
     }
     &__icons{
         padding-left: 70px;
+        padding-top: 0;
         font-size: 15px;
         color: #999c9f;
     }
@@ -657,6 +665,11 @@ ul{
     max-width: 1700px;
 }
 
+.footericon {
+   
+    padding: 5px 10px;
+
+}
 
 .ficon{
     color: #5dc6e8;

@@ -15,7 +15,8 @@
 
     li {
         list-style-type: none;
-        display: inline-block;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% auto;
     }
 
 }

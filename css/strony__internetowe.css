@@ -6,7 +6,7 @@ ul { list-style-type: none; }
 
 .container { max-width: 2000px; margin: 0 auto; }
 
-.intro__info { display: flex; background-color: #282828; justify-content: space-around; text-align: center; color: #fff; border-bottom: solid 1px #888; }
+.intro__info { display: flex; background-color: #777; justify-content: space-around; text-align: center; color: #fff; border-bottom: solid 1px #888; }
 
 .intro__list { display: flex; justify-content: center; cursor: pointer; }
 
@@ -26,7 +26,7 @@ ul { list-style-type: none; }
 
 .nav { color: white; }
 
-.nav__wrapper { display: flex; justify-content: space-around; box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.4); }
+.nav__wrapper { display: flex; justify-content: space-around; box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.4); }
 
 .nav__list { display: flex; color: black; }
 
@@ -53,13 +53,13 @@ ul { list-style-type: none; }
 
 .main__span { max-width: 600px; }
 
-.box-1 { background-image: url("../images/services__box1.png"); background-repeat: no-repeat; background-size: cover; background-position: center; width: 25%; }
+.box-1 { background-image: url("../images/services__box1.png"); background-repeat: no-repeat; background-size: cover; background-position: center; }
 
-.box-2 { background-image: url("../images/services__box2.png"); background-repeat: no-repeat; background-size: cover; background-position: center; width: 25%; }
+.box-2 { background-image: url("../images/services__box2.png"); background-repeat: no-repeat; background-size: cover; background-position: center; }
 
-.box-3 { background-image: url("../images/services__box3.png"); background-repeat: no-repeat; background-size: cover; background-position: center; width: 25%; }
+.box-3 { background-image: url("../images/services__box3.png"); background-repeat: no-repeat; background-size: cover; background-position: center; }
 
-.box-4 { background-image: url("../images/services__box4.png"); background-repeat: no-repeat; background-size: cover; background-position: center; width: 25%; }
+.box-4 { background-image: url("../images/services__box4.png"); background-repeat: no-repeat; background-size: cover; background-position: center; }
 
 .services { margin-top: 100px; }
 
@@ -67,7 +67,7 @@ ul { list-style-type: none; }
 
 .services__img { padding-top: 100px; padding-left: 45%; padding-bottom: 50px; }
 
-.services__card { margin-bottom: 50px; position: relative; }
+.services__card { margin-bottom: 50px; position: relative; width: 592px; }
 
 .services__title { text-transform: uppercase; font-weight: 400; max-width: 200px; color: white; padding-bottom: 100px; margin-left: 32%; text-align: center; }
 
@@ -118,6 +118,6 @@ ul { list-style-type: none; }
 
 .footer__icons { padding-left: 70px; font-size: 15px; color: #999c9f; }
 
-.container__footer__down { margin: 0 auto; max-width: 1700px; }
+.container__footer__down { margin: 0 auto; max-width: 1800px; }
 
 .ficon { color: #5dc6e8; margin-top: 13px; font-size: 10px; padding-right: 15px; }
