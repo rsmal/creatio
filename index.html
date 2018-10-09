@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
     <title>Creatio</title>
 </head>
 <body>
@@ -15,16 +15,16 @@
         <div class="intro__info container">
             <ul class="intro__list">
                 <li class="intro__item ">
-                    <i class=" fas fa-phone"></i>
-                    +48 530 600 060
+                    <img  src="images/tele.png" alt=""><span>+48 530 600 060</span>
+                    
                 </li>
                 <li class="intro__item">
-                    <i class="fas fa-phone"></i>
-                    +48 509 121 852
+                    <img  src="images/tele.png" alt=""><span>+48 530 600 060</span>
+                    
                 </li>
                 <li class="intro__item">
-                    <i class="fas fa-envelope"></i>
-                    kontakt@creatiostudio.com
+                    <i class=" ico fas fa-envelope"><span>kontakt@creatiostudio.com</span></i>
+                    
                 </li>
             </ul>
                 <div class="intro__social">
@@ -43,37 +43,92 @@
             <div class="nav__wrapper nav__list " id="sticky" > 
             <a class="nav__logo show " id="show" href="#1"><img  src="images/logo.png" alt="logo" class="intro__logo"></a>
             <a class="nav__logo hide " id="hide" href="#1"><img  src="images/fixed__logo.png" alt="logo" class="intro__logo"></a>
+            
+            <div style="width: 100px; height: 0px"></div>
+
             <ul class="nav__list" id="rwd" >    
-                <li class="nav__item"><a class="nav__link" href="#1">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#about">O firmie</a></li>
-                <li class="nav__item"><a class="nav__link" href="#oferta">Oferta</a></li>
-                <li class="nav__item"><a class="nav__link" href="#portfollio">Portfollio</a></li>
-                <li class="nav__item"><a class="nav__link" href="#footer">Kontakt</a></li>
+                <li class="nav__item" id="stickyColor"><a class="nav__link" href="#1">Home</a></li>
+                <li class="nav__item" id="stickyColor"><a class="nav__link" href="#about">O firmie</a></li>
+                <li class="nav__item" id="stickyColor "><a class="nav__link hover" href="#oferta">Oferta <span><i class="fas fa-chevron-down"></i></i></span></a>
+                <div class="submenu-bg"> 
+                    <ul class="nav__list nav__submenu">
+                            <li class="nav__submenu-item"> <a href="strony__internetowe.html">Strony internetowe</a></li>
+                            <li class="nav__submenu-item"> <a href="projekty__graficzne.html">Projekty graficzne</a></li>
+                            <li class="nav__submenu-item "> <a href="zdjecia_reklamowe.html">Zdjęcia reklamowe </a></li>
+                    </ul>
+                </div>
+                
+                </li>
+                <li class="nav__item" id="stickyColor"><a class="nav__link" href="#portfollio">Portfollio</a></li>
+                <li class="nav__item" id="stickyColor"><a class="nav__link" href="kontakt.html">Kontakt</a></li>
             </ul>
         </div>
         </nav>
+
+
+        
         <div class="slogan nav__list">
-            <h2 class="slogan__title">zadbamy o wizerunek</h2>
-            <p class="slogan__subtitle">twojej firmy</p>
-            <a class="slogan__link " href="#oferta">Zobacz ofertę</a>
-        </div>   
+                <div class="page-container">
+
+                    <div id="object1">
+                        <h2 class="slogan__title">zadbamy o wizerunek</h2>  
+                    </div>
+
+                    <div id="object2">
+                        <p class="slogan__subtitle">twojej firmy</p>
+                    </div>
+
+
+                    <div id="object3">
+                            <a class="slogan__link " href="#oferta">Zobacz ofertę</a>
+                    </div>
+
+                    <div id="object4">
+                            <p></p>
+                    </div>
+
+            <div id="layer">
+                    
+             </div>
+        </div>
+
+        
+   
+        <div class="nav__list">
+            <a href="#about"> <div class='icon-scroll'></div></a>
+        </div>
+
     </section>
 
-   
+
 
     <div class="arrow nav__list " >
             <a class="nav__logo arrow"  href="#1"> <img  id="arrow" class="arrow__icon"  src="images/arrow_black.png" alt="arrow"> </a>
     </div>
 
+
+
     <section class="about page-section" id="about">
-            <div class="about__content">
-                <h2 class="about__title">Kim jestesmy?</h2>
-                <p class="about__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
-                <p class="about__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <p class="about__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="about__wrapper">
+
+                <div class="about__card">
+
+                    <h2 class="about__title">Kim jestesmy?</h2>
+                    <p class="about__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+                    <p class="about__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="about__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+                <img class="about__img" src="images/about.jpg" alt="about">
+
             </div>
-            <img class="about__img" src="images/about.png" alt="about">
+            
     </section>
+
+
+
+
+
 
     <section class="skill" id="oferta">
             <h2 class="skill__title"> Co robimy ?</h2>
@@ -89,14 +144,14 @@
             
                 <div class="skill__card">
                         <img class="skill__img" src="images/skill__box2.png" alt="box2">
-                        <h3 class="skill__subtitle">Strony <span class="skill__subtitle2">internetowe </span></h3>
+                        <h3 class="skill__subtitle">Projekty <span class="skill__subtitle2">graficzne </span></h3>
                         <p class="skill__description">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
-                        <a href="" class="skill__link">zobacz więcej</a>
+                        <a href="projekty__graficzne.html" class="skill__link">zobacz więcej</a>
                 </div>
 
                 <div class="skill__card">
                         <img class="skill__img" src="images/aparat.png" alt="box3">
-                        <h3 class="skill__subtitle">Strony <span class="skill__subtitle2">internetowe </span></h3>
+                        <h3 class="skill__subtitle">zdjęcia <span class="skill__subtitle2">reklamowe </span></h3>
                         <p class="skill__description">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
                         <a href="" class="skill__link">zobacz więcej</a>
                 </div>
@@ -109,9 +164,15 @@
             <div class="team__wrapper container__team  ">
     
     
-                    <div > 
+                    <div class="hover__eff" > 
                         <div class="team__card ">
                             <div class="team__overlay"></div> 
+
+                            <div class="team__overlay--icons">
+                                <a href="#"><i class="team_icon fab fa-linkedin"></i></a>
+                                <a href="#"><i class="team_icon fab fa-facebook-square"></i></a>
+                            </div>
+
                             <img class="team__img" src="images/robo.jpeg" alt="mako">
                         </div>
                         <div class="team__background">
@@ -121,9 +182,16 @@
                     </div>
                 
                 
-                    <div> 
+                    <div class="hover__eff"> 
                         <div class="team__card ">
-                            <div class="team__overlay"></div> 
+                            <div class="team__overlay"></div>
+
+                            <div class="team__overlay--icons">
+                                    <a href="#"> <i class="team_icon fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="team_icon fab fa-facebook-square"></i></a>
+                                    <a href="#"><i class="team_icon fab fa-instagram"></i></a>
+                            </div>
+                             
                             <img class="team__img" src="images/koko.jpeg" alt="mako">
                         </div>
                         <div class="team__background">
@@ -135,9 +203,10 @@
                             
                     
                 
-                <div> 
+                <div class="hover__eff">  
                     <div class="team__card ">
                         <div class="team__overlay"></div> 
+                        <div class="team__overlay--icons"> <a href="#"> <i class="team_icon fab fa-facebook-square"></i></a></div>
                         <img class="team__img" src="images/mako.jpeg" alt="mako">
                     </div>
                     
@@ -150,276 +219,239 @@
     
     </section>
 
-    
+   
 
     <section class="portfollio " id="portfollio">
             <h2 class="portfollio__title">Portfolio</h2>
            
+                <div class="category__container">
+                    <p class="category__item" id="all"> All</p>
+                    <p class="category__item" id="web"> Strony internetowe</p>
+                    <p class="category__item" id="ulotki"> Ulotki</p>
+                    <p class="category__item" id="logotyp"> Logotypy</p>
 
+                </div>
 
-            <div id="gallery-menu"> 
-                <a class="portfollio__link" href="#" data-liquo="all" class="btn btn-primary">All</a> 
-                <a class="portfollio__link" href="#" data-liquo="1" class="btn btn-warning">Strony internetowe</a> 
-                <a class="portfollio__link" href="#" data-liquo="2" class="btn btn-warning">Ulotki</a> 
-                <a class="portfollio__link" href="#" data-liquo="3" class="btn btn-warning">Logotypy</a> 
-            </div>
-    
-               
-            <div>
-                 <ul class="portfollio__list container" id="gallery" >
+                <div class="block__container">
 
+                                                                 <!-- ROW 1-->
 
-                      <div class="portfollio__card" >
-                        <div class="portfollio__overlay"> 
-                               <h4 class="portfollio__description">img description</h4>
-                        </div>
-                        <li class="portfollio__item" data-liquo="1"><a href="#ex1" rel="modal:open" > <img class="portfollio__img" src="images/gallery1.jpeg" /></a> </li>
+                    <div class="gallery__item web">
+                            <a href="#ex1" rel="modal:open" ><div class="gallery__overlay"></div>
+                            <i class="fas fa-search-plus"></i>
+                         <img src="images/portfolio__imges/gallery_web1.jpeg" alt=> </a>
                     </div>
 
-                    <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                    <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="2"><a href="#ex2" rel="modal:open" > <img class="portfollio__img" src="images/gallery__ulotki1__min.jpg" /></a> </li>
+                    <div class="gallery__item ulotki">
+                            <a href="#ex2" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__ulotki1__min.jpg" alt=></a>
                     </div>
 
-                    <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                    <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="3"><a href="#ex3" rel="modal:open" > <img class="portfollio__img" src="images/gallery__logo__min1.jpg" /></a> </li>
+                    <div class="gallery__item logotyp">
+                            <a href="#ex3" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__logo__min1.jpg" alt=></a>
+                    </div>
+                                                                
+                                                                <!-- ROW 2-->
+
+                    <div class="gallery__item web">
+                            <a href="#ex4" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                         <img src="images/portfolio__imges/gallery_web2.jpeg" alt=> </a>
                     </div>
 
-                     <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                    <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="1"><a href="#ex4" rel="modal:open" > <img class="portfollio__img" src="images/gallery2.jpeg" /></a> </li>
-                        </div>
-    
-                        <div class="portfollio__card" >
-                                <div class="portfollio__overlay"> 
-                                      <h4 class="portfollio__description">img description</h4>
-                                </div>
-                                <li class="portfollio__item" data-liquo="2"><a href="#ex5" rel="modal:open" > <img class="portfollio__img" src="images/gallery__ulotki2__min.jpg" /></a> </li>
-                        </div>
-    
-                         <div class="portfollio__card" >
-                                <div class="portfollio__overlay"> 
-                                        <h4 class="portfollio__description">img description</h4>
-                                </div>
-                                <li class="portfollio__item" data-liquo="3"><a href="#ex6" rel="modal:open" > <img class="portfollio__img" src="images/gallery__logo__min2.jpg" /> </a></li>
-                        </div> 
-                          
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="1"><a href="#ex7" rel="modal:open" > <img class="portfollio__img" src="images/gallery3.jpeg" /></a> </li>
-                        </div>
+                    <div class="gallery__item ulotki">
+                            <a href="#ex5" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__ulotki2__min.jpg" alt=></a>
+                    </div>
+
+                    <div class="gallery__item logotyp">
+                            <a href="#ex6" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__logo__min2.jpg" alt=></a>
+                    </div>
 
 
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="2"><a href="#ex8" rel="modal:open" > <img class="portfollio__img" src="images/gallery__ulotki3__min.jpg" /></a> </li>
-                        </div>
+                                                                <!-- ROW 3-->
 
+                    <div class="gallery__item web">
+                            <a href="#ex7" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                         <img src="images/portfolio__imges/gallery_web3.jpeg" alt=></a> 
+                    </div>
 
+                    <div class="gallery__item ulotki">
+                            <a href="#ex8" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__ulotki3__min.jpg" alt=></a>
+                    </div>
 
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="3"><a href="#ex9" rel="modal:open" > <img class="portfollio__img" src="images/gallery__logo__min3.jpg" /></a> </li>
-                        </div>
+                    <div class="gallery__item logotyp">
+                            <a href="#ex9" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__logo__min3.jpg" alt=></a>
+                    </div>
 
+                                                                <!-- ROW 4-->
 
+                    <div class="gallery__item web">
+                            <a href="#ex10" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                         <img src="images/portfolio__imges/gallery_web4.jpeg" alt=> </a>
+                    </div>
 
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="1"><a href="#ex10" rel="modal:open" > <img class="portfollio__img" src="images/gallery4.jpeg" /></a> </li>
-                        </div>
+                    <div class="gallery__item ulotki">
+                            <a href="#ex11" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__ulotki4__min.jpg" alt=></a>
+                    </div>
 
+                    <div class="gallery__item logotyp">
+                            <a href="#ex12" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__logo__min4.jpg" alt=></a>
+                    </div>
 
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="2"><a href="#ex11" rel="modal:open" > <img class="portfollio__img" src="images/gallery__ulotki4__min.jpg" /></a> </li>
-                        </div>
+                                                                <!-- ROW 5-->
 
+                    <div class="gallery__item web">
+                            <a href="#ex13" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                         <img src="images/portfolio__imges/gallery_web5.jpeg" alt=> </a>
+                    </div>
 
+                    <div class="gallery__item ulotki">
+                            <a href="#ex14" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__ulotki5__min.jpg" alt=></a>
+                    </div>
 
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="3"><a href="#ex12" rel="modal:open" > <img class="portfollio__img" src="images/gallery__logo__min4.jpg" /></a> </li>
-                        </div>
+                    <div class="gallery__item logotyp">
+                            <a href="#ex15" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__logo__min5.jpg" alt=></a>
+                    </div>
 
+                                                                <!-- ROW 6-->
 
+                    <div class="gallery__item web">
+                            <a href="#ex16" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                         <img src="images/portfolio__imges/gallery_web6.jpeg" alt=> </a>
+                    </div>
 
-                        
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="1"><a href="#ex13" rel="modal:open" > <img class="portfollio__img" src="images/gallery5.jpeg" /></a> </li>
-                        </div>
+                    <div class="gallery__item ulotki">
+                            <a href="#ex17" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__ulotki6__min.jpg" alt=></a>
+                    </div>
 
-
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="2"><a href="#ex14" rel="modal:open" > <img class="portfollio__img" src="images/gallery__ulotki5__min.jpg" /></a> </li>
-                        </div>
-
-
-
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="3"><a href="#ex15" rel="modal:open" > <img class="portfollio__img" src="images/gallery__logo__min5.jpg" /></a> </li>
-                        </div>
-
-
-
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="1"><a href="#ex16" rel="modal:open" > <img class="portfollio__img" src="images/gallery6.jpeg" /> </li></a>
-                        </div>
-
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="2"><a href="#ex17" rel="modal:open" > <img class="portfollio__img" src="images/gallery__ulotki6__min.jpg" /></a> </li>
-                        </div>
-                       
-
-
-
-                        <div class="portfollio__card" >
-                            <div class="portfollio__overlay"> 
-                                   <h4 class="portfollio__description">img description</h4>
-                            </div>
-                            <li class="portfollio__item" data-liquo="3"><a href="#ex18" rel="modal:open" > <img class="portfollio__img" src="images/gallery__logo__min6.jpg" /></a> </li>
-                        </div>
-
-                        
-
-
+                    <div class="gallery__item logotyp">
+                            <a href="#ex18" rel="modal:open" ><div class="gallery__overlay"></div>
+                                <i class="fas fa-search-plus"></i>
+                        <img src="images/portfolio__imges/gallery__logo__min6.jpg" alt=></a>
+                    </div>
                     
-                   
-                    
-                        
-                </ul>
-            </div>    
+                </div>
     </section>
+
+
+    
 
     
     <section class="modals__img">
+
+                                    <!-- ROW 1-->
     
-    <div id="ex1" class="modal">
-            <img class="modal__img" src="images/portfolio1.jpg" alt="">
-            
-    </div>
+        <div id="ex1" class="modal">
+                <img class="modal__img" src="images/modal_web/modal_web_1.jpg" alt="">
+        </div>
 
-    <div id="ex2" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__ulotki1.jpg" alt="">
-        
-    </div>
+        <div id="ex2" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery__modal_ulotki1.jpg" alt="">
+        </div>
 
-    <div id="ex3" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__logo1.jpg" alt="">
+        <div id="ex3" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery_modal_logo1.jpg" alt="">
+        </div>
+
+                                    <!-- ROW 2-->
     
-    </div>
+        <div id="ex4" class="modal">
+                <img class="modal__img" src="images/modal_web/modal_web_2.jpg" alt="">
+        </div>
 
-    <div id="ex4" class="modal ">
-        <img class="modal__img" src="images/portfolio2.jpg" alt="">
+        <div id="ex5" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery__modal_ulotki2.jpg" alt="">
+        </div>
+
+        <div id="ex6" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery_modal_logo2.jpg" alt="">
+        </div>
+
+                                    <!-- ROW 3-->
     
-    </div>
+        <div id="ex7" class="modal">
+                <img class="modal__img" src="images/modal_web/modal_web_4.jpg" alt="">
+        </div>
 
-    <div id="ex5" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__ulotki2.jpg" alt="">
+        <div id="ex8" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery__modal_ulotki3.jpg" alt="">
+        </div>
+
+        <div id="ex9" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery_modal_logo3.jpg" alt="">
+        </div>
+
+                                    <!-- ROW 4-->
     
-    </div>
+        <div id="ex10" class="modal">
+                <img class="modal__img" src="images/modal_web/modal_web_5.jpg" alt="">
+        </div>
 
-    <div id="ex6" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__logo2.jpg" alt="">
+        <div id="ex11" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery__modal_ulotki4.jpg" alt="">
+        </div>
+
+        <div id="ex12" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery_modal_logo4.jpg" alt="">
+        </div>
+
+
+                                    <!-- ROW 5-->
     
-    </div>
+        <div id="ex13" class="modal">
+                <img class="modal__img" src="images/modal_web/modal_web_6.jpg" alt="">
+        </div>
 
-    <div id="ex7" class="modal ">
-        <img class="modal__img" src="images/portfolio4.jpg" alt="">
+        <div id="ex14" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery__modal_ulotki5.jpg" alt="">
+        </div>
+
+        <div id="ex15" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery_modal_logo5.jpg" alt="">
+        </div>
+
+
+                                    <!-- ROW 6-->
     
-    </div>
+        <div id="ex16" class="modal">
+                <img class="modal__img" src="images/modal_web/modal_web_7.jpg" alt="">
+        </div>
 
-    <div id="ex8" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__ulotki3.jpg" alt="">
+        <div id="ex17" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery__modal_ulotki6.jpg" alt="">
+        </div>
+
+        <div id="ex18" class="modal modal__size">
+            <img class="modal__img" src="images/portfolio__imges/gallery_modal_logo6.jpg" alt="">
+        </div>
+
     
-    </div>
-
-    <div id="ex9" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__logo3.jpg" alt="">
-    
-    </div>
-
-
-    <div id="ex10" class="modal">
-        <img class="modal__img" src="images/portfolio5.jpg" alt="">
-    
-    </div>
-
-    <div id="ex11" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__ulotki4.jpg" alt="">
-    
-    </div>
-
-    <div id="ex12" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__logo4.jpg" alt="">
-    
-    </div>
-
-
-    <div id="ex13" class="modal ">
-        <img class="modal__img" src="images/portfolio6.jpg" alt="">
-    
-    </div>
-
-    <div id="ex14" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__ulotki5.jpg" alt="">
-    
-    </div>
-
-    <div id="ex15" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__logo5.jpg" alt="">
-    
-    </div>
-
-    <div id="ex16" class="modal">
-        <img class="modal__img" src="images/portfolio2.jpg" alt="">
-    
-    </div>
-
-    <div id="ex17" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__ulotki6.jpg" alt="">
-    
-    </div>
-
-    <div id="ex18" class="modal modal__size">
-        <img class="modal__img" src="images/gallery__logo6.jpg" alt="">
-    
-    </div>
-</section>
+    </section>
 
     <footer class="footer" id="footer">
             
@@ -571,12 +603,28 @@
   crossorigin="anonymous"></script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-<script src="liquo/liquo.min.js"></script> 
+
 <script>
-        $("#gallery").liquo({
-            menu: "#gallery-menu",
-            random: true
-        });
+            $(document).ready(function(){
+                    $(".category__item").click(function(){
+                        let category = $(this).attr('id');
+                        
+                        if(category == 'all'){
+                            $('.gallery__item').addClass('hideGal');
+                            setTimeout(function(){
+                                $('.gallery__item').removeClass('hideGal');
+                            }, 300);
+                        } else {
+                            $('.gallery__item').addClass('hideGal');
+                            setTimeout(function(){
+                                $('.' + category).removeClass('hideGal');
+                            }, 300);
+
+                        }
+                    });
+            });
+
+
 </script>
 
 
@@ -594,12 +642,6 @@ $(window).scroll(function() {
 </script>
 
 
-
-
-
-
-
-
 <script>
 window.onscroll = function() {myFunction()};
 let navbar = document.getElementById("sticky");
@@ -607,6 +649,7 @@ let sticky = navbar.offsetTop;
 let show   = document.getElementById("show");
 let hide = document.getElementById("hide");
 let container = document.getElementById("1");
+
 function myFunction() {
     let windowWidth = $(window).width();
 if(windowWidth > 320 &&  windowWidth < 1300){
@@ -620,6 +663,12 @@ if(windowWidth > 320 &&  windowWidth < 1300){
     hide.classList.remove("hide")
     hide.classList.add("show")
     container.classList.remove("container")
+    $(".nav__item").css("color", "black");
+    $(".submenu-bg").css("margin-top", "8px");
+    
+    
+    
+    
   } else {
     navbar.classList.remove("fixed");
     navbar.classList.add("nav__wrapper")
@@ -629,6 +678,8 @@ if(windowWidth > 320 &&  windowWidth < 1300){
     hide.classList.remove("show")
     hide.classList.add("hide")
     container.classList.add("container")
+    $(".nav__item").css("color", "#d1d2d3");
+    $(".submenu-bg").css("margin-top", "0px"); 
   }
 }
 </script>
@@ -639,7 +690,7 @@ $( '.nav__list a ' ).on( 'click', function(e){
 	
     let href = $(this).attr( 'href' );
     $( 'html, body' ).animate({
-          scrollTop: $( href ).offset().top - 300
+          scrollTop: $( href ).offset().top - 100
     }, '300' );
     e.preventDefault();
   });
@@ -653,6 +704,52 @@ $(".arrow__icon") .mouseover(function () {
     this.src= "images/arrow_black.png"
 });
 </script>
+
+
+<script>
+        var object1=$('#object1');
+        var object2=$('#object2');
+        var object3=$('#object3');
+        var object4=$('#object4');
+        
+        var layer=$('#layer');
+        
+        layer.mousemove(function(e){
+           var valueX=(e.pageX * 1 / 40); 
+           var valueY=(e.pageY * 1 /40); 
+            
+            object1.css({
+                'transform':'translate3d('+valueX+'px,'+valueY+'px,0) '
+            });
+        });
+        
+        layer.mousemove(function(e){
+           var valueX=(e.pageX * -1 / 100); 
+           var valueY=(e.pageY * -1 / 100); 
+            
+            object2.css({
+                'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
+            });
+        });
+        
+        layer.mousemove(function(e){
+           var valueX=(e.pageX * -1 / 15); 
+           var valueY=(e.pageY * -1 / 15); 
+            
+            object3.css({
+                'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
+            });
+        });
+
+          layer.mousemove(function(e){
+            var valueX=(e.pageX * -1 / 100); 
+           var valueY=(e.pageY * -1 / 100);
+            
+            object4.css({
+                'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
+            });
+        });
+    </script>
 
 </body>
 </html>

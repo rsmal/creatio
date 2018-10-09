@@ -26,6 +26,7 @@ ul{
    
 }
 
+
 .modal {
     animation: moda__anim .3s forwards 0s ease-out;
     max-width: 1200px;
@@ -117,7 +118,6 @@ ul{
     }
 }
 
-
 .container__nav{
     max-width: 1500px;
     margin: 0 auto;
@@ -128,7 +128,7 @@ ul{
     width: 100%;
     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.4);
     &__wrapper {
-        padding: 17px;      
+        padding: 17px;     
     }
     &__list{
         display: flex;
@@ -150,6 +150,7 @@ ul{
         padding: 17px;
         background-color:#252525 ;
         animation: show 0.2s forwards 0s ease-out;
+        transition-delay: 2s;
     }
     &__submenu-item{
         padding: 10px 35px;
@@ -185,12 +186,15 @@ ul{
         }
 }
 
+
 .fa-chevron-down {
     position: absolute;
     font-size: 10px;
     margin-top: 5px;
-    margin-left: 17px; 
+    margin-left: 17px;
+    
 }
+
 
 .nav__item:hover .submenu-bg{
     display: block;  
@@ -217,12 +221,18 @@ ul{
         }
 }
 
+.container__main {
+    margin: 0 auto;
+    max-width: 1550px;
+}
+
 .main{
-    margin-top: 70px;
+    margin-top: 60px;
     &__title{
-        margin-left: 130px;
+        padding-right: 30px;
+        
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 30px;
         position: relative;
         &::after{
@@ -235,136 +245,43 @@ ul{
         }
     }
     &__content{
-        
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
     &__card{
+        position: relative;
         img{
             max-width: 100%;
             height: auto;
         }
     }
     &__span__wrapper{
-        margin-top: 100px;
+        margin-top: 75px;
+        margin-bottom: 50px;
     }
     &__span{
         max-width: 600px;
     }  
 }
 
-.box-1 {
-    background-image: url("../images/services__box1.png");
-    min-width: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    flex-basis: 25%;
-    
-}
-.box-2{
-    background-image: url("../images/services__box2.png");
-    background-repeat: no-repeat;
-    min-width: 400px;
-    background-size: cover;
-    background-position: center;
-    flex-basis: 25%;
-    
-}
-.box-3{
-    background-image: url("../images/services__box3.png");
-    background-repeat: no-repeat;
-    min-width: 400px;
-    background-size: cover;
-    background-position: center;
-    flex-basis: 25%;
-    
-}
-.box-4{
-    background-image: url("../images/services__box4.png");
-    background-repeat: no-repeat;
-    min-width: 400px;
-    background-size: cover;
-    background-position: center;
-    flex-basis: 25%;
-    
+
+
+
+
+
+
+.your-class{
+    box-shadow: inset 0 0 30px black;
+    width: 287px;
+    position: absolute;
+    top: 31%;
+    left: 83px;
 }
 
 
 
-.services{
-        margin-top: 100px;
-    &__content {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-        
-    }
 
-    &__img{
-        padding-top: 100px;
-        padding-left:45%;
-        padding-bottom: 50px;  
-    }
-    &__card{
-        margin-bottom: 10px;
-        position: relative;
-        
-    }
-    &__title{
-        text-transform: uppercase;
-        font-weight: 400;
-        max-width: 200px;
-        color:white;
-        padding-bottom: 100px;
-        margin-left: 32%;
-        text-align: center
-    }
-    &__overlay {
-        position: absolute;
-        background: #0a88bb;
-        width: 100%;
-        height: 100%;
-        display: none;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-    &__description {
-        color: #fff;
-        text-align: center;
-        font-size: 20px;
-        margin-top: 27%;
-       
-    }
-}
-
-.services__card:hover .services__overlay{
-    display: block;
-    animation: yourAnimation 0.3s forwards 0s ease-out;
-    
-}
-
-.services__card:hover .services__img{
-    opacity: 0;
-      
-}
-.services__card:hover .services__title{
-    opacity: 0;    
-}
-
-@keyframes yourAnimation{
-    0%{
-        transform: rotate(0) scale(0);
-        }
-    100%{
-        transform: rotate(0) scale(1);
-        }
-}
 
 
 
@@ -374,11 +291,10 @@ ul{
    
     
     &__title{
-        padding-top: 50px;
-        
+        padding-top: 80px;
         margin-bottom: 50px;
         font-size: 30px;
-        font-weight: 400;
+        font-weight: 600;
         color: #222222;
         text-transform: uppercase;
         position: relative;
@@ -388,7 +304,7 @@ ul{
             width: 95px;
             border-bottom: solid 3px #5dc6e8;
             left: 50%;
-            top: 90px; 
+            top: 120px; 
             transform: translateX(-50%);     
         }
     }
@@ -586,4 +502,11 @@ ul{
     margin-top: 13px;
     font-size:  10px;
     padding-right: 15px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+   
+    
+
 }

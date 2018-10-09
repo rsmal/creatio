@@ -1,4 +1,3 @@
-
 /*
     Liquo - Filterable and Responsive Image Gallery
     Version 1.0.0
@@ -9,7 +8,6 @@
     Issues: http://github.com/ryanfitzgerald/liquo/issues
     Licensed under MIT Open Source
  */
-
 .liquo-gallery {
   margin: 0;
   padding: 0;
@@ -17,6 +15,9 @@
 
 .liquo-gallery li {
   list-style-type: none;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 33.33% 33.33% auto;
+  -ms-grid-columns: 33.33% 33.33% auto;
+      grid-template-columns: 33.33% 33.33% auto;
 }
+/*# sourceMappingURL=liquo.css.map */

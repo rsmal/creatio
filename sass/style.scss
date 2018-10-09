@@ -19,19 +19,13 @@
 	margin: 0 auto;
 }
 
-
-
-
-
-
 a {
     color: inherit;
     text-decoration: none;
 }
 ul{
-    list-style-type: none;;
+    list-style-type: none;
 }
-
 
 
 
@@ -39,8 +33,8 @@ ul{
     animation: moda__anim .3s forwards 0s ease-out;
     max-width: 1200px;
     &__img{
-        height: 700px;
         width: 100%;
+        height: auto;
         margin-left: 60px;
         margin: 0;
         padding: 0;
@@ -52,6 +46,7 @@ ul{
     }
 
 }
+
 
 .blocker{
     z-index: 4;
@@ -104,6 +99,7 @@ ul{
 
 .intro {
     background-image: url("../images/hero.png");
+    background-attachment: fixed;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,6 +109,8 @@ ul{
         text-align: center;
         color: #fff;
         border-bottom: solid 1px #888;
+        z-index: 2;
+        
     }
     &__list {
         display: flex;
@@ -121,22 +119,43 @@ ul{
     }
     &__item{
         padding: 20px;
+        position: relative;
+        z-index: 2;
+        img{
+            position: absolute;
+            top: 25px;
+            left: 7px;
+        }
+        span{
+            color: #babcbd;
+            padding-left: 5px;
+            font-weight: 400;
+            font-size: 14px;
+            &:hover{
+                color: #5dc6e8;
+                 transition: 0.3s;
+            }
+        }
+        
     }
     &__social {
-       padding: 10px;
+        color: #babcbd;
+        padding: 10px;
+        z-index: 2;
     }
 }
-.fas {
-    padding-right: 5px;
-    &:hover {
-        color: #5dc6e8;
-        transition: 0.3s;
-    }
+
+
+
+
+.ico {
+    font-size: 12px;
+    color: #babcbd;
 }
 
 .introicon {
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
         &:hover {
             color: #5dc6e8;
             transition: 0.3s;
@@ -149,12 +168,16 @@ ul{
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
+        z-index: 2;
     }
     &__list{
+        z-index: 2;
         display: flex;
+       
     }
     &__item {
         padding: 15px 10px;
+        color: #babcbd;
     }
     &__link { 
         &:hover {
@@ -162,27 +185,77 @@ ul{
             transition: 0.3s;     
         }
     }
+    &_logo{
+        z-index: 2;
+    }
+    &__submenu{
+        display: block;
+        padding: 17px;
+        background-color:#252525 ;
+        animation: show 0.2s forwards 0s ease-out;
+    }
+    &__submenu-item{
+        padding: 10px 35px;
+        color: #7e7e7e;
+        font-size: 14px;
+        font-weight: 400;
+        a{
+            padding: 15px;
+            &:hover {
+                color: #5dc6e8;
+                transition: 0.3s;    
+            }
+        }
+    }
 }
+.submenu-bg {
+    display: none;
+    margin-top: 0px;
+    margin-left: -120px;
+    padding: 25px;
+    position: absolute;
+    background-color: transparent;
+}
+
+@keyframes show{
+    0%{
+        transform:  scale(0) ;
+        }
+    100%{
+        transform:  scale(1) ;
+        }
+}
+
+.fa-chevron-down {
+    position: absolute;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 17px;
+    
+}
+
+.nav__item:hover .submenu-bg{
+    display: block;  
+}
+
 .fixed___flex{
     display: flex;
     justify-content: space-around;  
+    
 }
 
 .fixed{
     position: fixed;
     padding: 15px;
+    
     background-color: white;
     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.4);
     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.4);
     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.4);
-    
     /*left: 50%;
-    
     transform: translate(-50%) !important;*/
     width: calc(100% - 30px);
-    
     top:0;
-    color: black;
     z-index: 3;
     animation: navbar 0.3s forwards 0s ease-out;
 }
@@ -212,33 +285,131 @@ ul{
 .slogan{
     color: white;
     text-transform: uppercase;
-    display: block;
     text-align: center;
-    margin-top: 15%;
+    
     &__title {
+        width: 1200px;
+        position: absolute;
         font-size: 40px;
+        font-weight: 400;
         opacity: 0.7;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+       
     }
     &__subtitle {
+        width: 1200px;
+        position: absolute;
+        font-weight: 300;
         font-size: 40px;
-        opacity: 0.5;
+        opacity: 0.6;
         margin-bottom: 40px;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
     }
     &__link {
+        width: 150px;
+        position: absolute;
         padding: 10px 20px;
         border: 2px solid #2e93b4;
-        background-color: #2e93b4;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 300;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
         &:hover {
             background-color: rgba(255,255,255,0);
+            background-color: #2e93b4;
             transition: 0.3s;
         }
     }
 }
 
+
+// floating banner text // 
+
+
+#object1{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#object2{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#object3{
+    position: absolute;
+    top: 65%;
+    left: 50.5%;
+    transform: translateX(-50%);
+    width: 80px;
+    z-index: 2; 
+}
+
+#layer{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+// floating banner text // 
+
+
+
+//bouncing arrow //
+.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll{
+  width: 23px;
+  height: 40px;
+  margin-left: -20px;
+  bottom: 3%;
+  opacity: 0.5;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before{
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  opacity: 0.5;
+  margin-left: -2.5px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+}
+//bouncing arrow//
+
 .about{
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-gap: 100px;
     margin: 100px;
     &__title{
         font-size: 30px;
@@ -255,19 +426,25 @@ ul{
             top: 120%;
         }
     }
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
     &__span{
         margin: 30px 0;
+        max-width: 700px;
         color: #777;
     }
     &__img{
-        margin-top: 30px;
-        height: 80%;
-        width: 80%;
+        margin-top: 50px;
+        max-width: 100%;
+        height: auto;
     }
 }
 
 .skill {
-    background-image: url("../images/services.png");
+    background-image: url("../images/services.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -300,8 +477,8 @@ ul{
         
     }
     &__card{
-        margin: 30px 50px 100px;
-        background: rgba(0,0,0,0.1);
+        margin: 30px 20px 80px;
+        background: rgba(0, 60, 111, 0.35);
         padding: 50px;
         position: relative;
         
@@ -317,18 +494,9 @@ ul{
             content: "";
             position: absolute;
             width: 95px;
-            border-bottom: solid 4px #2e93b4;
-            left: 21%;
-            top: -200%;
-            transform: translateX(-50%);      
-        }
-        &::before{
-            content: "";
-            position: absolute;
-            width: 95px;
-            border-bottom: solid 4px #2e93b4;
-            left: 80%;
-            top: -200%;
+            border-bottom: solid 3px #00ADEE;
+            left: 50%;
+            top: -80%;
             transform: translateX(-50%);      
         }
     }
@@ -444,17 +612,53 @@ ul{
     }
     &__img{
         display: block;
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
     &__background{
+        position: relative;
         background-color: #f3f3f3;
         width: 100%;
+    }
+
+    &__overlay--icons{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &_icon{
+        margin-top: 85%;
+        margin-left: 5%;
+        font-size: 35px;
+        color: #fff;
+        
     }
 }
 
 
 .team__card:hover .team__overlay{
+    display: block;
+    animation: yourAnimation 0.3s forwards 0s ease-out;
+    
+}
+.hover__eff:hover .team__overlay{
+    display: block;
+    animation: yourAnimation 0.3s forwards 0s ease-out;
+    
+}
+
+.hover__eff:hover .team__overlay--icons{
+    display: block;
+    animation: yourAnimation 0.3s forwards 0s ease-out;
+    
+}
+
+.team__card:hover .team__overlay--icons{
     display: block;
     animation: yourAnimation 0.3s forwards 0s ease-out;
     
@@ -491,74 +695,96 @@ ul{
             transform: translateX(-50%);     
         }
         
-    }
-    &__link{
-        padding: 0 10px;
-        font-size: 20px;
-        &:hover {
-            color:red;
-            transition: 0.3s;
+    }  
+    .category__container{
+        display: flex;
+        justify-content: center;
+        p{
+            padding: 10px;
+            cursor: pointer;
+           &:hover{
+               color: #5dc6e8;
+               transition: 0.3s;
+           }
         }
     }
-    &__list{
+
+    .block__container{
+        max-width: 1600px;
+        margin: 0 auto;
+        box-sizing: border-box;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
         
-        
-    }
-    &__img{
-        width: 100%;
-        height: 100%;
-        
-        
-    }
-    &__overlay {
+       
+    }   
+}
+
+.gallery__overlay{
         position: absolute;
         background: #2e93b4;
         opacity: 0.5;
         width: 100%;
         height: 100%;
-        display: none;
         top: 0;
+        display: none;
         bottom: 0;
         left: 0;
         right: 0;
-    }
-    &__card{
-        position: relative;
-        margin: 20px;
         
-    }
-    &__description{
-        color: #fff;
-        font-size: 20px;
-        margin-top: 30%;
-        
+}
+
+.gallery__item{
+    transform: all 0.4s ease-in-out;
+    position: relative;
+    margin: 10px;
+    img{
+        max-width: 100%;
     }
 }
 
-
-
-.portfollio__card:hover .portfollio__overlay{
+.gallery__item:hover .gallery__overlay{
     display: block;
     animation: yourAnimation 0.3s forwards 0s ease-out;
-    
 }
 
+.fa-search-plus {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+
+  }
+
+  .gallery__item:hover .fa-search-plus{
+    display: block;
+    animation: yourAnimation 0.3s forwards 0s ease-out;
+}
+
+
+.hideGal{
+    transform: scale(0);
+    width: 0;
+    padding: 0;
+    transform: all 0.4s ease-in-out;
+}
+
+
 .footer{
-    
     background-color: #282828;
     height: 100%;
     color: #c9cacb;
     position: relative;
-    
+    overflow: hidden;
     &__logo{
         margin-left: 10%;
-        
-    }
-    &__img{
-        
     }
     &__info {
         margin-left: 10%;
@@ -581,7 +807,7 @@ ul{
         margin-left: 10%;
         width: 100%;
         font-size: 18px;
-        font-weight: bold;
+        font-weight: 400;
         padding: 10px 0;
         position: relative;
         &::after{
@@ -589,7 +815,7 @@ ul{
             position: absolute;
             width: 70px;
             border-bottom: solid 3px #5dc6e8;
-            left: 9%;
+            left: 10%;
             top: 40px; 
             transform: translateX(-50%);  
              
@@ -600,7 +826,7 @@ ul{
         text-transform: uppercase;
         margin-left: 10%;
         font-size: 18px;
-        font-weight: bold;
+        font-weight: 400;
         width: 100%;
         padding: 10px 0;
         position: relative;
@@ -609,7 +835,7 @@ ul{
             position: absolute;
             width: 70px;
             border-bottom: solid 3px #5dc6e8;
-            left: 20%;
+            left: 22%;
             top: 40px; 
             transform: translateX(-50%);  
              
@@ -637,7 +863,7 @@ ul{
     
     &__social{
         display: flex;
-        padding-top: 20px;
+        padding-top: 10px;
         padding-bottom: 10px;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -645,7 +871,7 @@ ul{
     &__copyrights{
         font-size: 12px;
         color: #999c9f;
-        padding-top: 5px;
+        padding-top: 8px;
         
         
     }
@@ -662,12 +888,11 @@ ul{
 
 .container__footer__down{
     margin:0 auto;
-    max-width: 1700px;
+    max-width: 1500px;
 }
 
 .footericon {
-   
-    padding: 5px 10px;
+    padding: 8px 10px;
 
 }
 
@@ -701,15 +926,11 @@ ul{
     }
     
     .nav{
-        &__wrapper{
-            
-        }
+        
         &__list{
             display: none;    
         }
-        &__link{
-            
-        }
+       
         &__logo{
             position: relative;
             display: block;
@@ -817,9 +1038,7 @@ ul{
             height: 100%;
             
         }
-        &__card {
-            
-        }
+       
 
         &__list{
             display: flex;
@@ -884,7 +1103,6 @@ ul{
  
 
 
-
     .portfollio{
         &__title{
             margin-top: 0;
@@ -901,8 +1119,7 @@ ul{
             width: 100%;
             height: 100%;
         }
-        &__card {
-        }
+        
     }
     .about{
         display: block;
