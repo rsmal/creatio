@@ -1,384 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="sass/zdjecia_reklamowe.css">
-    <title>Strony Internetowe</title>
-</head>
-<body>
-        <section class="intro " id="intro">
-                <div class="intro__info  ">
-                    <div class="container__intro "> 
-                    <ul class="intro__list ">
-                        <li class="intro__item ">
-                            <img  src="images/tele.png" alt=""><span>+48 530 600 060</span>
-                            
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Easy Bootstrap Gallery with Pop-up Modal Carousel</title>
+		</head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="sass/zdjecia_reklamowe.css">
+	<body>
+
+        <a href="index.html">click</a>
+
+        <section class="gallery" id="gallery">
+                    <h2 class="gallery__title">Realizacje</h2>
+                <div id="image-gallery">
+                    <div class="gallery__wrapper" >
+                                                                        <!-- ROW 1-->
+                        <li class="gallery__card image">
+                                <div class="info"><i class="fas fa-search-plus"></i></div>
+                                
+                                    <a href="images/portfolio__imges/gallery_web1.jpeg"><img src="images/portfolio__imges/gallery_web1.jpeg"></a>
+                                    <div class="img-overlay"></div>
+                               
                         </li>
-                        <li class="intro__item">
-                            <img  src="images/tele.png" alt=""><span>+48 530 600 060</span>
-                            
+        
+                        
+
+                        <li class="gallery__card image">
+                                <div class="info"><i class="fas fa-search-plus"></i></div>
+                                    
+                                 
+                                    <a href="images/portfolio__imges/gallery_web2.jpeg"><img src="images/portfolio__imges/gallery_web2.jpeg"></a>
+                                    <div class="img-overlay"></div>
+                                
                         </li>
-                        <li class="intro__item">
-                            <i class=" ico fas fa-envelope"><span>kontakt@creatiostudio.com</span></i>
-                            
+
+
+                        <li class="gallery__card image">
+                                <div class="info"><i class="fas fa-search-plus"></i></div>
+                                    
+                                 
+                                    <a href="images/portfolio__imges/gallery_web3.jpeg"><img src="images/portfolio__imges/gallery_web3.jpeg"></a>
+                                    <div class="img-overlay"></div>
+                                
                         </li>
-                    </ul>
-                        <div class="intro__social">
-                            <div class="intro__icons">
-                                <a href="#"><i class=" introicon fab fa-facebook-f"></i></a>
-                                <a href="#"><i class=" introicon fab fa-instagram"></i></a>
-                                <a href="#"><i class=" introicon fab fa-twitter"></i></a>
-                            </div>
-                        </div>
+                                                                        <!-- ROW 2-->
+                    
+                        <li class="gallery__card image">
+                                <div class="info"><i class="fas fa-search-plus"></i></div>
+                                    
+                                 <a href="images/portfolio__imges/gallery_web4.jpeg"><img src="images/portfolio__imges/gallery_web4.jpeg"></a>
+                                 <div class="img-overlay"></div>
+                        </li>
+        
+        
+                                                                
+                         <li class="gallery__card image">
+                                <div class="info"><i class="fas fa-search-plus"></i></div>
+                                    
+                                 <a href="images/portfolio__imges/gallery_web5.jpeg"><img src="images/portfolio__imges/gallery_web5.jpeg"></a>
+                                 <div class="img-overlay"></div>
+                        </li>
+        
+                        
+                        <li class="gallery__card">
+                                <div class="info"><i class="fas fa-search-plus"></i></div>
+                                    
+                                 <a href="images/portfolio__imges/gallery_web6.jpeg"><img src="images/portfolio__imges/gallery_web6.jpeg"></a>
+                                 <div class="img-overlay"></div>
+                        </li>
+
                     </div>
                 </div>
-        
-               
-        
-                <nav class="nav  " id="1">        
-                    
-                    <div class="nav__wrapper container__nav nav__list" id="sticky" > 
-
-                       
-                           
-                                <a class="nav__logo"  href="index.html"><img  src="images/fixed__logo.png" alt="logo" class="intro__logo"></a>
-                           
-                                <div style="width: 100px; height: 0px"></div>
-                            
-                                <ul class="nav__list" id="rwd" >    
-                                        <li class="nav__item" id="stickyColor"><a class="nav__link" href="#1">Home</a></li>
-                                        <li class="nav__item" id="stickyColor"><a class="nav__link" href="#about">O firmie</a></li>
-                                        <li class="nav__item" id="stickyColor "><a class="nav__link hover" href="#oferta">Oferta <span><i class="fas fa-chevron-down"></i></i></span></a>
-                                        <div class="submenu-bg"> 
-                                            <ul class="nav__list nav__submenu">
-                                                    <li class="nav__submenu-item"> <a href="strony__internetowe.html">Strony internetowe</a></li>
-                                                    <li class="nav__submenu-item"> <a href="projekty__graficzne.html">Projekty graficzne</a></li>
-                                                    <li class="nav__submenu-item "> <a href="#">Zdjęcia reklamowe </a></li>
-                                            </ul>
-                                        </div>
-                                        
-                                        </li>
-                                        <li class="nav__item" id="stickyColor"><a class="nav__link" href="#portfollio">Portfollio</a></li>
-                                        <li class="nav__item" id="stickyColor"><a class="nav__link" href="#footer">Kontakt</a></li>
-                                    </ul>
-                    </div>
-                </nav>
         </section>
-
-
-        <section class="main ">
-            <h1 class="main__title container__main">Strony internetowe</h1>
-
-            <div class="main__content">
-                <div class="main__card">
-                    <div class="main__span__wrapper">
-                        
-                        <p class="main__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                        <p class="main__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                        <p class="main__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                        <p class="main__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                        <p class="main__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                        <p class="main__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                        <p class="main__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                        <p class="main__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                        <p class="main__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                        <p class="main__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                    </div>
-                </div>
-
-                <div class="main__card">
-                    <img src="images/zdjecia_reklamowe.png" alt="xx">
-                
-                
-                    <div class="your-class">
-                            <div><img src="images/zdjecia_reklamowe_1.jpg" alt=""></div>
-                            <div><img src="images/zdjecia_reklamowe_2.jpg" alt=""></div>
-                            <div><img src="images/zdjecia_reklamowe_3.jpg" alt=""></div>
-                        </div>
-                
-                
-                
-                </div>
-
-            </div>
-
-        </section>    
-
-
-      
-
         
-
-
-
-
-        <section class="gallery">
-            <h2 class="gallery__title">Realizacje</h2>
-
-            <div class="gallery__wrapper">
-                                                        <!-- ROW 2-->
-                <div class="gallery__card">
-                        <a href="#ex1" rel="modal:open" ><div class="gallery__overlay"></div>
-                            <i class="fas fa-search-plus"></i>
-                         <img src="images/portfolio__imges/gallery_web1.jpeg" alt=> </a>
-                </div>
-
-                
-                <div class="gallery__card">
-                        <a href="#ex2" rel="modal:open" ><div class="gallery__overlay"></div>
-                            <i class="fas fa-search-plus"></i>
-                         <img src="images/portfolio__imges/gallery_web2.jpeg" alt=> </a>
-                </div>
-
-            
-                <div class="gallery__card">
-                        <a href="#ex3" rel="modal:open" ><div class="gallery__overlay"></div>
-                            <i class="fas fa-search-plus"></i>
-                         <img src="images/portfolio__imges/gallery_web3.jpeg" alt=> </a>
-                </div>
-
-
-                                                        <!-- ROW 2-->
-                <div class="gallery__card">
-                        <a href="#ex4" rel="modal:open" ><div class="gallery__overlay"></div>
-                            <i class="fas fa-search-plus"></i>
-                         <img src="images/portfolio__imges/gallery_web4.jpeg" alt=> </a>
-                </div>
-
-                
-                <div class="gallery__card">
-                        <a href="#ex5" rel="modal:open" ><div class="gallery__overlay"></div>
-                            <i class="fas fa-search-plus"></i>
-                         <img src="images/portfolio__imges/gallery_web5.jpeg" alt=> </a>
-                </div>
-
-                
-                <div class="gallery__card">
-                        <a href="#ex6" rel="modal:open" ><div class="gallery__overlay"></div>
-                            <i class="fas fa-search-plus"></i>
-                         <img src="images/portfolio__imges/gallery_web6.jpeg" alt=> </a>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="modals__img">
-
-                <!-- ROW 1-->
-
-                <div id="ex1" class="modal ">
-                    <img class="modal__img" src="images/modal_web/modal_web_1.jpg" alt="">
-                </div>
-
-                <div id="ex2" class="modal ">
-                    <img class="modal__img" src="images/modal_web/modal_web_2.jpg" alt="">
-                </div>
-
-                <div id="ex3" class="modal ">
-                    <img class="modal__img" src="images/modal_web/modal_web_4.jpg" alt="">
-                </div>
-
-                                <!-- ROW 2-->
-
-                <div id="ex4" class="modal ">
-                    <img class="modal__img" src="images/modal_web/modal_web_5.jpg" alt="">
-                </div>
-
-                <div id="ex5" class="modal ">
-                    <img class="modal__img" src="images/modal_web/modal_web_6.jpg" alt="">
-                </div>
-
-                <div id="ex6" class="modal ">
-                    <img class="modal__img" src="images/modal_web/modal_web_7.jpg" alt="">
-                </div>
-            </section>
-
-
-
-
-
-
-
-
-           
-        <footer class="footer" id="footer">
-            
-        
-                <div class="footer__content container__footer ">
-        
-                    <div class="footer__card">
-                        <a class="footer__logo "  href=""><img class="footer__img"  src="images/logo.png" alt="logo"></a>
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-phone"></i>
-                                        <p class="footer__span">+48 530 600 060 - grafik</p>
-                                </div>
-        
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-phone"></i>
-                                        <p class="footer__span">+48 530 600 060 - webdeveloper</p>
-                                </div>
-        
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-phone"></i>
-                                        <p class="footer__span">+48 530 600 060 - webdeveloper</p>
-                                </div>
-        
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-envelope"></i>
-                                        <p class="footer__span">kontakt@creadiostudio.comk</p>
-                                </div>
-                        
-                    </div>
-        
-                    <div class="footer__card">
-                                <h3 class="footer__title--1">Nasze usługi</h3>
-                                <div class="footer__center__column">
-                                    <div class="footer__center__card">
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-angle-double-right"></i>
-                                       <a href="#"> <p class="footer__span">Strony internetowe</p></a>
-                                </div>
-        
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-angle-double-right"></i>
-                                        <a href="#"> <p class="footer__span">Strony wizytówki</p></a>
-                                </div>
-        
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-angle-double-right"></i>
-                                        <a href="#"><p class="footer__span">Hosting</p></a>
-                                </div>
-        
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-angle-double-right"></i>
-                                        <a href="#"><p class="footer__span">Projekt logo</p></a>
-                                </div>
-                            </div>
-        
-        
-        
-        
-                            <div class="footer__center__card">
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-angle-double-right"></i>
-                                       <a href="#"> <p class="footer__span">Strony internetowe</p></a>
-                                </div>
-        
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-angle-double-right"></i>
-                                        <a href="#"> <p class="footer__span">Strony wizytówki</p></a>
-                                </div>
-        
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-angle-double-right"></i>
-                                        <a href="#"><p class="footer__span">Hosting</p></a>
-                                </div>
-        
-                                <div class="footer__info"> 
-                                        <i class="ficon fas fa-angle-double-right"></i>
-                                        <a href="#"><p class="footer__span">Projekt logo</p></a>
-                                </div>
-                                </div>
-                            </div>
-                        
-        
-                    </div>
-        
-                    <div class="footer__card">
-                            <h3 class="footer__title--2">Przydatne Linki</h3>
-                            <div class="footer__info"> 
-                                    <i class="ficon fas fas fa-angle-double-right"></i>
-                                    <a href="#"><p class="footer__span">Strony internetowe</p></a>
-                            </div>
-        
-                            <div class="footer__info"> 
-                                    <i class="ficon fas fa-angle-double-right"></i>
-                                    <a href="#"><p class="footer__span">Strony wizytówki</p></a>
-                            </div>
-        
-                            <div class="footer__info"> 
-                                    <i class="ficon fas fa-angle-double-right"></i>
-                                    <a href="#"><p class="footer__span">Hosting</p></a>
-                            </div>
-        
-                            <div class="footer__info"> 
-                                    <i class="ficon fas fa-angle-double-right"></i>
-                                    <a href="#"><p class="footer__span">Projekt logo</p></a>
-                            </div>
-                    
-        
-                </div>
-                </div>
-        
-                <div class="footer__border">
-        
-                    <div class="footer__social container__footer__down">
-                            <p class="footer__copyrights">© Copyrights Creatio Studio 2018 </p>
-        
-                            <div class="footer__icons">
-                                <a href="#"><i class="footericon fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="footericon fab fa-instagram"></i></a>
-                                <a href="#"><i class="footericon fab fa-twitter"></i></a>
-                            </div>
-                    </div>
-                </div>
-        
-        </footer>
-           
-           
-           
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>          
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        
-           
-           
-           <script>
-                    window.onscroll = function() {myFunction()};
-                    let navbar = document.getElementById("sticky");
-                    
-                   
-                    let sticky = navbar.offsetTop;
-                    function myFunction() {
-                        if (window.pageYOffset >= sticky){
-                            navbar.classList.add("fixed")
-                            navbar.classList.remove("container__nav");
-                            $(".nav__list").css("justify-content", "space-around");
-                            
-                        }else {
-                            navbar.classList.remove("fixed");
-                            navbar.classList.add("container__nav");
-                            $(".nav__list").css("justify-content", "space-between");
-                            
-                        }
-                    }
-            </script>
-
+    
 
 <script>
-$(document).ready(function(){
-$('.your-class').slick({
-    infinite: true,
-    fade: true,
-    arrows: false,
-    cssEase: 'linear',
-    autoplay: true,
-    autoplaySpeed: 3000
-    
-   
+
+
+// Lightbox
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
+var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
+var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+
+// Add overlay
+$overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
+$("#gallery").append($overlay);
+
+// Hide overlay on default
+$overlay.hide();
+
+// When an image is clicked
+$(".img-overlay").click(function(event) {
+  // Prevents default behavior
+  event.preventDefault();
+  // Adds href attribute to variable
+  var imageLocation = $(this).prev().attr("href");
+  // Add the image src to $image
+  $image.attr("src", imageLocation);
+  // Fade in the overlay
+  $overlay.fadeIn("slow");
 });
+
+// When the overlay is clicked
+$overlay.click(function() {
+  // Fade out the overlay
+  $(this).fadeOut("slow");
 });
-     
-  
-  </script>
-    
-</body>
-</html>
+
+// When next button is clicked
+$nextButton.click(function(event) {
+  // Hide the current image
+  $("#overlay img").hide();
+  // Overlay image location
+  var $currentImgSrc = $("#overlay img").attr("src");
+  // Image with matching location of the overlay image
+  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+  // Finds the next image
+  var $nextImg = $($currentImg.closest(".image").next().find("img"));
+  // All of the images in the gallery
+  var $images = $("#image-gallery img");
+  // If there is a next image
+  if ($nextImg.length > 0) { 
+    // Fade in the next image
+    $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+  } else {
+    // Otherwise fade in the first image
+    $("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
+  }
+  // Prevents overlay from being hidden
+  event.stopPropagation();
+});
+
+// When previous button is clicked
+$prevButton.click(function(event) {
+  // Hide the current image
+  $("#overlay img").hide();
+  // Overlay image location
+  var $currentImgSrc = $("#overlay img").attr("src");
+  // Image with matching location of the overlay image
+  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+  // Finds the next image
+  var $nextImg = $($currentImg.closest(".image").prev().find("img"));
+  // Fade in the next image
+  $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+  // Prevents overlay from being hidden
+  event.stopPropagation();
+});
+
+// When the exit button is clicked
+$exitButton.click(function() {
+  // Fade out the overlay
+  $("#overlay").fadeOut("slow");
+});</script>
+
+
+
+
+
+
+
+
+        <script>
+                const nodes = [].slice.call(document.querySelectorAll('.gallery__card , .services__card'), 0);
+                const directions  = { 0: 'top', 1: 'right', 2: 'bottom', 3: 'left' };
+                const classNames = ['in', 'out'].map((p) => Object.values(directions).map((d) => `${p}-${d}`)).reduce((a, b) => a.concat(b));
+                
+                const getDirectionKey = (ev, node) => {
+                  const { width, height, top, left } = node.getBoundingClientRect();
+                  const l = ev.pageX - (left + window.pageXOffset);
+                  const t = ev.pageY - (top + window.pageYOffset);
+                  const x = (l - (width/2) * (width > height ? (height/width) : 1));
+                  const y = (t - (height/2) * (height > width ? (width/height) : 1));
+                  return Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
+                }
+                
+                class Item {
+                  constructor(element) {
+                    this.element = element;    
+                    this.element.addEventListener('mouseover', (ev) => this.update(ev, 'in'));
+                    this.element.addEventListener('mouseout', (ev) => this.update(ev, 'out'));
+                  }
+                  
+                  update(ev, prefix) {
+                    this.element.classList.remove(...classNames);
+                    this.element.classList.add(`${prefix}-${directions[getDirectionKey(ev, this.element)]}`);
+                  }
+                }
+                
+                nodes.forEach(node => new Item(node));
+                </script>
+
+	</body>
+	</html>

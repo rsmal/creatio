@@ -26,6 +26,14 @@ ul{
    
 }
 
+
+$duration: 300ms;
+$timing-fn: ease;
+$turquoise: #1ABC9C;
+$wet-asphalt: #34495E;
+$midnight-blue: #2C3E50;
+$clouds: #ECF0F1;
+
 .modal {
     animation: moda__anim .3s forwards 0s ease-out;
     max-width: 1200px;
@@ -221,11 +229,12 @@ ul{
 }
 
 .main{
-    margin-top: 60px;
+    margin-bottom: 100px;
     &__title{
-        margin-left: 130px;
+        margin-top: 50px;
+       margin-bottom: 50px;
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 30px;
         position: relative;
         &::after{
@@ -245,17 +254,45 @@ ul{
     }
     &__card{
         img{
+            margin-top: 50px;
             max-width: 100%;
             height: auto;
+            
         }
-    }
-    &__span__wrapper{
-        margin-top: 150px;
     }
     &__span{
         max-width: 600px;
+        padding-top: 35px;
+        margin-left: 30px;
+        line-height: 1.5;
+        text-align: justify;
+        color: #777;
     }  
+
+    &__span2{
+        max-width: 600px;
+        padding-top: 20px;
+        margin-left: 120px;
+        text-align: justify;
+        color: #777;
+    } 
 }
+
+
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.about__test1{
+    height: 60px;
+    width: 91px;
+    margin-top: 30px;
+    
+}
+
 
 
 
@@ -297,10 +334,10 @@ ul{
         position: absolute;
         font-size: 25px;
         border-radius: 50%;
-        animation: glowing 5000ms infinite;
+        animation: glowing 2500ms infinite;
         cursor: pointer;
         &:hover{
-            transform: rotate(180deg);
+            transform: rotate(90deg);
             transition: 0.3s;  
         }
     }
@@ -308,11 +345,20 @@ ul{
         width: 250px;
         position: absolute;
         background-color: white;
+        border-radius: 15px;
         padding: 10px;
-        left:12%;
+        left:10.5%;
+        box-shadow:0 0 50px #000000;
         top: 100%; 
         transform:  scale(0);
-        
+        h3{
+            color:#5DC6E8;
+            padding: 10px;
+        }
+        p{
+            color: #777;
+            padding: 10px;
+        }
         
     }
     &__note2{
@@ -320,9 +366,40 @@ ul{
         position: absolute;
         background-color: white;
         padding: 10px;
+        border-radius: 15px;
         left:11.5%;
-        top: -35%; 
+        top: -75%; 
+        box-shadow:0 0 50px #000000;
         transform:  scale(0);
+        h3{
+            color:#5DC6E8;
+            padding: 10px;
+        }
+        p{
+            color: #777;
+            padding: 10px;
+        }
+        
+       
+    }
+    &__note3{
+        width: 250px;
+        position: absolute;
+        background-color: white;
+        padding: 10px;
+        border-radius: 15px;
+        left:11.5%;
+        box-shadow:0 0 50px #000000;
+        top: -98%; 
+        transform:  scale(0);
+        h3{
+            color:#5DC6E8;
+            padding: 10px;
+        }
+        p{
+            color: #777;
+            padding: 10px;
+        }
         
        
     }
@@ -333,6 +410,9 @@ i:hover ~ .skill__note1{
 }
 
 i:hover ~ .skill__note2{
+    animation: note .3s forwards 0s ease-out;
+}
+i:hover ~ .skill__note3{
     animation: note .3s forwards 0s ease-out;
 }
 
@@ -375,13 +455,17 @@ i:hover ~ .skill__note2{
     text-align: center;
     background-color: #f3f3f3;
    
+    li{
+        perspective: 400px;
+        list-style-type: none;
+    }
     
     &__title{
         padding-top: 80px;
         
         margin-bottom: 50px;
         font-size: 30px;
-        font-weight: 400;
+        font-weight: 600;
         color: #222222;
         text-transform: uppercase;
         position: relative;
@@ -426,10 +510,95 @@ i:hover ~ .skill__note2{
     }
 }
 
-.gallery__card:hover .gallery__overlay{
-    display: block;
-    animation: yourAnimation 0.3s forwards 0s ease-out;
-}
+
+.info {
+    // hide-initial-state
+    transform: rotate3d(1,0,0, 90deg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background: #2e93b4;
+    opacity: 0.6;
+    box-sizing: border-box;
+  }
+  
+  
+  .in-top .info {
+     transform-origin: 50% 0%;
+     animation: in-top $duration $timing-fn 0ms 1 forwards;
+  }
+  .in-right .info {
+    transform-origin: 100% 0%;
+    
+    animation: in-right $duration $timing-fn 0ms 1 forwards;
+  }
+  .in-bottom .info {
+    transform-origin: 50% 100%;
+    animation: in-bottom $duration $timing-fn 0ms 1 forwards;
+  }
+  .in-left .info {
+    transform-origin: 0% 0%;
+    animation: in-left $duration $timing-fn 0ms 1 forwards;
+  }
+  
+  .out-top .info {
+    transform-origin: 50% 0%;
+    animation: out-top $duration $timing-fn 0ms 1 forwards;
+  }
+  .out-right .info {
+    transform-origin: 100% 50%;
+    animation: out-right $duration $timing-fn 0ms 1 forwards;
+  }
+  .out-bottom .info {
+    transform-origin: 50% 100%;
+    animation: out-bottom $duration $timing-fn 0ms 1 forwards;
+  }
+  .out-left .info {
+    transform-origin: 0% 0%;
+    animation: out-left $duration $timing-fn 0ms 1 forwards;
+  }
+  
+  @keyframes in-top {
+    from {transform: rotate3d(-1,0,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-right {
+    from {transform: rotate3d(0,-1,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-bottom {
+    from {transform: rotate3d(1,0,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-left {
+    from {transform: rotate3d(0,1,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  
+  @keyframes out-top {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(-1,0,0, 110.7deg)}}
+  @keyframes out-right {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(0,-1,0, 119.4deg)}}
+  @keyframes out-bottom {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(1,0,0, 110.7deg)}}
+  @keyframes out-left {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(0,1,0, 119.4deg)}}
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 .fa-search-plus {
     color: white;
@@ -573,10 +742,10 @@ i:hover ~ .skill__note2{
     }
 }
 
-.container__footer__down{
-    margin:0 auto;
-    max-width: 1500px;
-}
+.container__footer__down {
+    margin: 0 auto;
+    max-width: 1620px;
+  }
 
 .footericon {
    

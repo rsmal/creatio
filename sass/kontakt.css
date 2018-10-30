@@ -351,6 +351,7 @@ ul {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 25px;
+  margin-right: 150px;
 }
 
 .left form p {
@@ -358,7 +359,7 @@ ul {
 }
 
 .left form input {
-  width: 250px;
+  width: 350px;
   height: 38px;
   background: #efefef;
   padding-left: 5px;
@@ -366,16 +367,18 @@ ul {
 }
 
 .left form select {
-  width: 257px;
+  width: 357px;
   height: 41px;
   background: #efefef;
   border: 1px solid #999;
 }
 
 .left form textarea {
-  width: 540px;
+  width: 745px;
+  padding: 10px 4px;
   background: #efefef;
   border: 1px solid #999;
+  resize: vertical;
 }
 
 .left form .full {
@@ -413,7 +416,9 @@ option {
   margin-top: 30px;
   font-size: 14px;
   opacity: 0.6;
-  max-width: 550px;
+  text-align: justify;
+  line-height: 1.5;
+  max-width: 750px;
 }
 
 .footer {
@@ -548,7 +553,7 @@ option {
 
 .container__footer__down {
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1620px;
 }
 
 .footericon {

@@ -2,7 +2,117 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    
 }
+
+
+
+
+.trusted{
+  
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 100px auto;
+    }
+}
+
+
+
+.loader-wrapper{ 
+    position: fixed;
+    top: 0;
+    background-color: #0f1012;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+}
+
+.loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 75px;
+    height: 75px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-top-color: #85c5e6;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+.loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-top-color: #18a7f0;
+    -webkit-animation: spin 2.5s linear infinite;
+    animation: spin 2.5s linear infinite;
+}
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px; 
+    bottom: 15px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-top-color: #85c5e6;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+$duration: 300ms;
+$timing-fn: ease;
+$turquoise: #1ABC9C;
+$wet-asphalt: #34495E;
+$midnight-blue: #2C3E50;
+$clouds: #ECF0F1;
 
 .container { 
 	max-width: 1500px;
@@ -14,15 +124,15 @@
 	margin: 0 auto;
 }
 
-.container__team { 
-	max-width: 1500px;
-	margin: 0 auto;
-}
+ 
 
 a {
     color: inherit;
     text-decoration: none;
 }
+
+
+
 ul{
     list-style-type: none;
 }
@@ -98,11 +208,12 @@ ul{
 
 
 .intro {
-    background-image: url("../images/hero.png");
-    background-attachment: fixed;
+    position: relative;
+    background-image: url("../images/baner1.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: background-image 1s linear;
     &__info { 
         display: flex;
         justify-content: space-between;
@@ -143,6 +254,22 @@ ul{
         padding: 10px;
         z-index: 2;
     }
+
+    &__arrow-left{
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        z-index: 800;
+        cursor: pointer;
+    }
+
+    &__arrow-right{
+        position: absolute;
+        top: 50%;
+        right:50px;
+        z-index: 800;
+        cursor: pointer;
+    }
 }
 
 
@@ -163,6 +290,7 @@ ul{
 }
 
 .nav {
+    
     color: white;
     &__wrapper {
         display: flex;
@@ -195,10 +323,11 @@ ul{
         animation: show 0.2s forwards 0s ease-out;
     }
     &__submenu-item{
-        padding: 10px 35px;
+        padding: 10px 40px ;
         color: #7e7e7e;
         font-size: 14px;
         font-weight: 400;
+        
         a{
             padding: 15px;
             &:hover {
@@ -287,6 +416,8 @@ ul{
     text-transform: uppercase;
     text-align: center;
     
+   
+    
     &__title {
         width: 1200px;
         position: absolute;
@@ -310,9 +441,9 @@ ul{
         transform: translateX(-50%);
     }
     &__link {
-        width: 150px;
+        width: 130px;
         position: absolute;
-        padding: 10px 20px;
+        padding: 10px 30px;
         border: 2px solid #2e93b4;
         background-color: transparent;
         font-size: 14px;
@@ -327,6 +458,53 @@ ul{
         }
     }
 }
+
+
+.banner__2__hero{
+    display: none;
+    text-align: left;
+    padding: 50px;
+    position: absolute;
+    top: 350px;
+    left: 10%;
+    
+    &__wrapper{
+        margin-bottom: 50px;
+    }
+
+    h1,p,span{
+        font-size: 40px;
+        color: white;
+        font-weight: 300;
+        text-align: left;
+        padding: 2px;
+        opacity: 0.6;
+    }
+    h3{
+        font-size: 40px;
+        color: white;
+        font-weight: 900;
+        text-align: left;
+        padding: 2px;
+        opacity: 0.6;
+    }
+    
+    
+    a{
+        background-color: #00ADEE;
+        margin-top: 30px;
+        font-size: 14px;
+        padding: 10px 20px;
+        &:hover{
+            background-color: white;
+            color: #2e93b4;
+            transition: 0.3s;
+        }
+    }
+    
+}
+
+
 
 
 // floating banner text // 
@@ -414,9 +592,10 @@ ul{
     &__title{
         font-size: 30px;
         text-transform: uppercase;
+        
         position: relative;
         color: #222222;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         &::after{
             content: "";
             position: absolute;
@@ -432,18 +611,53 @@ ul{
         flex-wrap: wrap;
     }
     &__span{
-        margin: 30px 0;
-        max-width: 700px;
+        margin: 30px 10px;
+        max-width: 600px;
         color: #777;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    &__span1{
+        margin: 30px 80px;
+        max-width: 600px;
+        color: #777;
+        line-height: 1.5;
+        text-align: justify;
+        
     }
     &__img{
         margin-top: 50px;
         max-width: 100%;
+        margin-left: 30px;
         height: auto;
     }
+   
+    &__test1{
+        height: 132px;
+        width: 73px;
+        margin-top: 45px;
+    }
+
+    &__test2{
+        height: 132px;
+        width: 80px;
+        margin-top: 25px;
+    }
+    
 }
 
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
 .skill {
+    
     background-image: url("../images/services.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -517,7 +731,7 @@ ul{
     &__link {
         position: absolute;
         text-transform: uppercase;
-        font-weight: light; 
+        font-weight: 300; 
         font-size: 14px;
         top: 93%;
         left: 50%;
@@ -556,9 +770,19 @@ ul{
     margin-bottom: 10px;
 }
 
+.container__team { 
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
 
 
 .team {
+    
+    li{
+        list-style-type: none;
+        perspective: 400px;
+    }
     &__title {
         margin: 100px;
         text-align: center;
@@ -599,16 +823,51 @@ ul{
         position: relative;
     }
     &__overlay {
-        position: absolute;
-        background: #2e93b4;
-        opacity: 0.5;
+        transform: rotate3d(1,0,0, 90deg);
         width: 100%;
         height: 100%;
-        display: none;
+        position: absolute;
         top: 0;
-        bottom: 0;
         left: 0;
-        right: 0;
+        pointer-events: none;
+        background: #2e93b4;
+        box-sizing: border-box;
+        img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-left: 40%;
+            margin-top: 10%;
+            margin-bottom: 50px;
+            position: relative;   
+        }
+        p{
+            max-width: 360px;
+            text-align: center;
+            margin: 0 auto;
+            color: #fff;
+            opacity: 0.7;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 85px;
+            border-bottom: solid 3px #5dc6e8;
+            left:79%;
+            transform: translateX(-50%);
+            top: 95px;      
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 85px;
+            border-bottom: solid 3px #5dc6e8;
+            left:23%;
+            transform: translateX(-50%);
+            top: 95px;      
+        }
+        
     }
     &__img{
         display: block;
@@ -625,44 +884,98 @@ ul{
         position: absolute;
         width: 100%;
         height: 100%;
-        display: none;
+        display: block;
         top: 0;
         bottom: 0;
-        left: 0;
+        left:0;
         right: 0;
+        text-align: center;
+       
     }
     &_icon{
-        margin-top: 85%;
-        margin-left: 5%;
-        font-size: 35px;
-        color: #fff;
+        margin-top: 83%;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 10px;
+        color: #2e93b4;
+        font-size: 20px;
+        margin-left: 13px;
+        text-align: center;
+        
         
     }
+
+  
 }
 
 
-.team__card:hover .team__overlay{
-    display: block;
-    animation: yourAnimation 0.3s forwards 0s ease-out;
+  .in-top .team__overlay {
+     transform-origin: 50% 0%;
+     animation: in-top $duration $timing-fn 0ms 1 forwards;
+  }
+  .in-right .team__overlay {
+    transform-origin: 100% 0%;
     
-}
-.hover__eff:hover .team__overlay{
-    display: block;
-    animation: yourAnimation 0.3s forwards 0s ease-out;
-    
+    animation: in-right $duration $timing-fn 0ms 1 forwards;
+  }
+  .in-bottom .team__overlay {
+    transform-origin: 50% 100%;
+    animation: in-bottom $duration $timing-fn 0ms 1 forwards;
+  }
+  .in-left .team__overlay {
+    transform-origin: 0% 0%;
+    animation: in-left $duration $timing-fn 0ms 1 forwards;
+  }
+  
+  .out-top .team__overlay {
+    transform-origin: 50% 0%;
+    animation: out-top-t $duration $timing-fn 0ms 1 forwards;
+  }
+  .out-right .team__overlay {
+    transform-origin: 100% 50%;
+    animation: out-right-t $duration $timing-fn 0ms 1 forwards;
+  }
+  .out-bottom .team__overlay {
+    transform-origin: 50% 100%;
+    animation: out-bottom-t $duration $timing-fn 0ms 1 forwards;
+  }
+  .out-left .team__overlay {
+    transform-origin: 0% 0%;
+    animation: out-left-t $duration $timing-fn 0ms 1 forwards;
+  }
+  
+  @keyframes in-top {
+    from {transform: rotate3d(-1,0,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-right {
+    from {transform: rotate3d(0,-1,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-bottom {
+    from {transform: rotate3d(1,0,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-left {
+    from {transform: rotate3d(0,1,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  
+  @keyframes out-top-t {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(-1,0,0, 119.3deg)}}
+  @keyframes out-right-t {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(0,-1,0, 119.4deg)}}
+  @keyframes out-bottom-t {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(1,0,0, 119.3deg)}}
+  @keyframes out-left-t {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(0,1,0, 119.4deg)}}
+  
+
+
+.fa-facebook-f{
+    padding: 10px 15px;
 }
 
-.hover__eff:hover .team__overlay--icons{
-    display: block;
-    animation: yourAnimation 0.3s forwards 0s ease-out;
-    
-}
-
-.team__card:hover .team__overlay--icons{
-    display: block;
-    animation: yourAnimation 0.3s forwards 0s ease-out;
-    
-}
 
 @keyframes yourAnimation{
     0%{
@@ -721,19 +1034,7 @@ ul{
     }   
 }
 
-.gallery__overlay{
-        position: absolute;
-        background: #2e93b4;
-        opacity: 0.5;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        display: none;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        
-}
+
 
 .gallery__item{
     transform: all 0.4s ease-in-out;
@@ -886,10 +1187,10 @@ ul{
     }
 }
 
-.container__footer__down{
-    margin:0 auto;
-    max-width: 1500px;
-}
+.container__footer__down {
+    margin: 0 auto;
+    max-width: 1620px;
+  }
 
 .footericon {
     padding: 8px 10px;
@@ -902,6 +1203,168 @@ ul{
     font-size:  10px;
     padding-right: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+/* the important bits */
+
+
+
+
+.info {
+  // hide-initial-state
+  transform: rotate3d(1,0,0, 90deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: #2e93b4;
+  opacity: 0.6;
+  box-sizing: border-box;
+}
+
+
+.in-top .info {
+   transform-origin: 50% 0%;
+   animation: in-top $duration $timing-fn 0ms 1 forwards;
+}
+.in-right .info {
+  transform-origin: 100% 0%;
+  
+  animation: in-right $duration $timing-fn 0ms 1 forwards;
+}
+.in-bottom .info {
+  transform-origin: 50% 100%;
+  animation: in-bottom $duration $timing-fn 0ms 1 forwards;
+}
+.in-left .info {
+  transform-origin: 0% 0%;
+  animation: in-left $duration $timing-fn 0ms 1 forwards;
+}
+
+.out-top .info {
+  transform-origin: 50% 0%;
+  animation: out-top $duration $timing-fn 0ms 1 forwards;
+}
+.out-right .info {
+  transform-origin: 100% 50%;
+  animation: out-right $duration $timing-fn 0ms 1 forwards;
+}
+.out-bottom .info {
+  transform-origin: 50% 100%;
+  animation: out-bottom $duration $timing-fn 0ms 1 forwards;
+}
+.out-left .info {
+  transform-origin: 0% 0%;
+  animation: out-left $duration $timing-fn 0ms 1 forwards;
+}
+
+@keyframes in-top {
+  from {transform: rotate3d(-1,0,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-right {
+  from {transform: rotate3d(0,-1,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-bottom {
+  from {transform: rotate3d(1,0,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-left {
+  from {transform: rotate3d(0,1,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+
+@keyframes out-top {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(-1,0,0, 110.7deg)}}
+@keyframes out-right {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(0,-1,0, 119.4deg)}}
+@keyframes out-bottom {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(1,0,0, 110.7deg)}}
+@keyframes out-left {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(0,1,0, 119.4deg)}}
+
+
+/* you can ignore this ones */
+
+.block__container li {
+  padding: 0;
+  list-style: none;
+  perspective: 400px;
+  
+  .normal {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

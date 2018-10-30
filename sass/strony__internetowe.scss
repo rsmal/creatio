@@ -4,6 +4,14 @@
     font-family: 'Lato', sans-serif;
 }
 
+$duration: 300ms;
+$timing-fn: ease;
+$turquoise: #1ABC9C;
+$wet-asphalt: #34495E;
+$midnight-blue: #2C3E50;
+$clouds: #ECF0F1;
+
+
 a {
     color: inherit;
     text-decoration: none;
@@ -218,11 +226,15 @@ ul{
 }
 
 .main{
-    margin-top: 70px;
+    img{
+        max-width: 100%;
+            height: auto;
+
+    }
     &__title{
-        margin-left: 130px;
+        margin-bottom: 50px;
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 30px;
         position: relative;
         &::after{
@@ -235,32 +247,62 @@ ul{
         }
     }
     &__content{
-        
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    &__card{
-        img{
-            max-width: 100%;
-            height: auto;
+   
+    &__img{
+            margin-top: 100px; 
         }
-    }
+    
     &__span__wrapper{
-        margin-top: 100px;
+        margin-top: 50px;
+        margin-left: 20px;
+        position: relative;
     }
     &__span{
-        max-width: 600px;
+        padding-top: 20px;
+        margin-left: 30px;
+        max-width: 700px;
+        color: #777;
+        text-align: justify;
+        line-height: 1.5;
     }  
 }
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+
+.about__test1{
+    height: 60px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.main__span1{
+    position: absolute;
+    top: 95%;
+    left: 130px;
+    color: #777;
+
+}
+
+
 
 .box-1 {
     background-image: url("../images/services__box1.png");
     min-width: 400px;
+    height: 350px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     flex-basis: 25%;
+   
     
 }
 .box-2{
@@ -276,6 +318,7 @@ ul{
     background-image: url("../images/services__box3.png");
     background-repeat: no-repeat;
     min-width: 400px;
+
     background-size: cover;
     background-position: center;
     flex-basis: 25%;
@@ -294,20 +337,17 @@ ul{
 
 
 .services{
+
+    li{
+        perspective: 400px;
+        list-style-type: none;
+    }
         margin-top: 100px;
     &__content {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
         
-    }
-
-    &__img{
-        padding-top: 100px;
-        padding-left:45%;
-        padding-bottom: 50px;  
     }
     &__card{
         margin-bottom: 10px;
@@ -324,61 +364,114 @@ ul{
         text-align: center
     }
     &__overlay {
-        position: absolute;
-        background: #0a88bb;
+        transform: rotate3d(1,0,0, 90deg);
         width: 100%;
         height: 100%;
-        display: none;
+        position: absolute;
         top: 0;
-        bottom: 0;
         left: 0;
-        right: 0;
+        pointer-events: none;
+        background: #2e93b4;
+        box-sizing: border-box;
+        display: block;
+        img{
+            display: block;
+            margin: 70px auto 30px;
+            height: 20%;
+        }
+      
     }
     &__description {
         color: #fff;
         text-align: center;
         font-size: 20px;
-        margin-top: 27%;
+        font-weight: 300;
+        padding: 0 50px;
+        font-size: 16px;
        
     }
 }
 
-.services__card:hover .services__overlay{
-    display: block;
-    animation: yourAnimation 0.3s forwards 0s ease-out;
-    
-}
+.in-top .services__overlay {
+    transform-origin: 50% 0%;
+    animation: in-top $duration $timing-fn 0ms 1 forwards;
+ }
+ .in-right .services__overlay {
+   transform-origin: 100% 0%;
+   
+   animation: in-right $duration $timing-fn 0ms 1 forwards;
+ }
+ .in-bottom .services__overlay {
+   transform-origin: 50% 100%;
+   animation: in-bottom $duration $timing-fn 0ms 1 forwards;
+ }
+ .in-left .services__overlay {
+   transform-origin: 0% 0%;
+   animation: in-left $duration $timing-fn 0ms 1 forwards;
+ }
+ 
+ .out-top .services__overlay {
+   transform-origin: 50% 0%;
+   animation: out-top-s $duration $timing-fn 0ms 1 forwards;
+ }
+ .out-right .services__overlay {
+   transform-origin: 100% 50%;
+   animation: out-right-s $duration $timing-fn 0ms 1 forwards;
+ }
+ .out-bottom .services__overlay {
+   transform-origin: 50% 100%;
+   animation: out-bottom-s $duration $timing-fn 0ms 1 forwards;
+ }
+ .out-left .services__overlay {
+   transform-origin: 0% 0%;
+   animation: out-left-s $duration $timing-fn 0ms 1 forwards;
+ }
+ 
 
-.services__card:hover .services__img{
-    opacity: 0;
-      
-}
-.services__card:hover .services__title{
-    opacity: 0;    
-}
 
-@keyframes yourAnimation{
-    0%{
-        transform: rotate(0) scale(0);
-        }
-    100%{
-        transform: rotate(0) scale(1);
-        }
-}
+
+
+
+ @keyframes in-top {
+    from {transform: rotate3d(-1,0,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-right {
+    from {transform: rotate3d(0,-1,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-bottom {
+    from {transform: rotate3d(1,0,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-left {
+    from {transform: rotate3d(0,1,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  
+  @keyframes out-top-s {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(-1,0,0, 113.7deg)}}
+  @keyframes out-right-s {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(0,-1,0, 125.8deg)}}
+  @keyframes out-bottom-s {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(1,0,0, 113.7deg)}}
+  @keyframes out-left-s {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(0,1,0, 123.5deg)}}
 
 
 
 .gallery{
     text-align: center;
     background-color: #f3f3f3;
-   
-    
+    li{
+        perspective: 400px;
+        list-style-type: none;
+    }
     &__title{
         padding-top: 50px;
-        
         margin-bottom: 50px;
         font-size: 30px;
-        font-weight: 400;
+        font-weight: 600;
         color: #222222;
         text-transform: uppercase;
         position: relative;
@@ -399,9 +492,7 @@ ul{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        
     }
-
     &__overlay{
         position: absolute;
         background: #2e93b4;
@@ -419,14 +510,101 @@ ul{
         margin: 10px;
         img{
             max-width: 100%;
+            height: auto;
         }
     }
 }
 
-.gallery__card:hover .gallery__overlay{
-    display: block;
-    animation: yourAnimation 0.3s forwards 0s ease-out;
-}
+
+
+
+
+.info {
+    // hide-initial-state
+    transform: rotate3d(1,0,0, 90deg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background: #2e93b4;
+    opacity: 0.6;
+    box-sizing: border-box;
+  }
+  
+  
+  .in-top .info {
+     transform-origin: 50% 0%;
+     animation: in-top $duration $timing-fn 0ms 1 forwards;
+  }
+  .in-right .info {
+    transform-origin: 100% 0%;
+    
+    animation: in-right $duration $timing-fn 0ms 1 forwards;
+  }
+  .in-bottom .info {
+    transform-origin: 50% 100%;
+    animation: in-bottom $duration $timing-fn 0ms 1 forwards;
+  }
+  .in-left .info {
+    transform-origin: 0% 0%;
+    animation: in-left $duration $timing-fn 0ms 1 forwards;
+  }
+  
+  .out-top .info {
+    transform-origin: 50% 0%;
+    animation: out-top $duration $timing-fn 0ms 1 forwards;
+  }
+  .out-right .info {
+    transform-origin: 100% 50%;
+    animation: out-right $duration $timing-fn 0ms 1 forwards;
+  }
+  .out-bottom .info {
+    transform-origin: 50% 100%;
+    animation: out-bottom $duration $timing-fn 0ms 1 forwards;
+  }
+  .out-left .info {
+    transform-origin: 0% 0%;
+    animation: out-left $duration $timing-fn 0ms 1 forwards;
+  }
+  
+  @keyframes in-top {
+    from {transform: rotate3d(-1,0,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-right {
+    from {transform: rotate3d(0,-1,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-bottom {
+    from {transform: rotate3d(1,0,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  @keyframes in-left {
+    from {transform: rotate3d(0,1,0, 90deg)}
+    to   {transform: rotate3d(0,0,0, 0deg)}}
+  
+  @keyframes out-top {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(-1,0,0, 110.7deg)}}
+  @keyframes out-right {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(0,-1,0, 119.4deg)}}
+  @keyframes out-bottom {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(1,0,0, 110.7deg)}}
+  @keyframes out-left {
+    from {transform: rotate3d(0,0,0, 0deg)}
+    to   {transform: rotate3d(0,1,0, 119.4deg)}}
+  
+
+
+
+
+
+
+
+
+
+
 
 .fa-search-plus {
     color: white;
@@ -570,10 +748,10 @@ ul{
     }
 }
 
-.container__footer__down{
-    margin:0 auto;
-    max-width: 1500px;
-}
+.container__footer__down {
+    margin: 0 auto;
+    max-width: 1620px;
+  }
 
 .footericon {
    
